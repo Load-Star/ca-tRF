@@ -77,6 +77,18 @@ nonzero_ratio_threshold=0.1
 df_sample=pd.read_csv("/Path/Of/Sample/Sheet",dtype=str)
 em=pd.read_csv("/Path/Of/tRF/Expression/Matrix",index_col=0)
 
+sample_tumor_stage1=df_sample[(df_sample["is_cancer"]=="1")&
+			  (df_sample["numeric_tumor_stage"]=="1")]["sample_id"].values
+sample_tumor_stage2=df_sample[(df_sample["is_cancer"]=="1")&
+			  (df_sample["numeric_tumor_stage"]=="2")]["sample_id"].values
+sample_tumor_stage3=df_sample[(df_sample["is_cancer"]=="1")&
+			  (df_sample["numeric_tumor_stage"]=="3")]["sample_id"].values
+sample_tumor_stage4=df_sample[(df_sample["is_cancer"]=="1")&
+			  (df_sample["numeric_tumor_stage"]=="4")]["sample_id"].values
+
+l_n=np.array([len(sample) for sample in [sample_tumor_stage1,sample_tumor_stage2,
+					      sample_tumor_stage3,sample_tumor_stage4]])
+
 n_threshold=10
 if (l_n>=n_threshold).sum()>=3:
 	em_tumor_stage1=em[sample_tumor_stage1]
