@@ -1,0 +1,207 @@
+A sample sheet (".csv" format) and a tRF expression matrix (".csv" format) of interested cancer should be prepared for this code, which can be processed from the "Dataset/SampleSheet.csv" and "Dataset/tRF_Expression_Matrix.csv"
+"/Path/Of/Sample/Sheet" and "/Path/Of/tRF/Expression/Matrix" in the code is exactly the directory of sample sheet and tRF expression matrix.
+"/Path/Of/Result" is the directory saving the results.
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+1. Screen differientially expressed tRF between cancer samples and using Limma (R language):
+
+library("limma")
+
+nonzero_ratio_threshold=0.1
+df_sample<-read.csv("/Path/Of/Sample/Sheet",sep=''),header=TRUE,colClasses="character")
+df_sample<-df_sample[
+	((df_sample$age!="'--")&
+	(df_sample$gender!="not reported")&
+	(df_sample$race!="not reported")),
+]
+
+df_sample$is_cancer<-as.factor(df_sample$is_cancer)
+df_sample$age<-as.integer(df_sample$age)
+df_sample$gender<-as.factor(df_sample$gender)
+df_sample$race<-as.factor(df_sample$race)
+
+sample<-df_sample$sample_id
+sample_normal<-df_sample$sample_id[df_sample$is_cancer=="0"]
+sample_cancer<-df_sample$sample_id[df_sample$is_cancer=="1"]
+
+message(paste("n_normal:",length(sample_normal),sep=''))
+message(paste("n_cancer:",length(sample_cancer),sep=''))
+
+n_threshold<-25
+if((length(sample_normal)>=n_threshold)&(length(sample_cancer)>=n_threshold)){
+	em<-read.csv("/Path/Of/tRF/Expression/Matrix",row.names=1,header=TRUE,check.names=FALSE)
+	em<-em[,sample]
+	l_nonzero_ratio<-(rowSums(em>0)/length(sample))
+	is_expressed<-(l_nonzero_ratio>=nonzero_ratio_threshold)
+	em<-em[is_expressed,]
+
+	formula_str<-"~0+df_sample$is_cancer"
+	if (var(df_sample$age)!=0) formula_str<-paste(formula_str,"+","df_sample$age",sep='')
+	if (nlevels(df_sample$gender)>1) formula_str<-paste(formula_str,"+","df_sample$gender",sep='')
+	if (nlevels(df_sample$race)>1) formula_str<-paste(formula_str,"+","df_sample$race",sep='')
+	formula<-as.formula(formula_str)
+	message(formula)
+	message("- - - - - - - - - - - - - - - -")
+	
+	design<-model.matrix(formula)
+	colnames(design)<-gsub(" ","_",colnames(design))
+	colnames(design)<-gsub("df_sample\\$","",colnames(design))
+	colnames(design)<-gsub("is_cancer0","normal",colnames(design))
+	colnames(design)<-gsub("is_cancer1","cancer",colnames(design))
+	colnames(design)<-gsub("gender","gender_",colnames(design))
+	colnames(design)<-gsub("race","race_",colnames(design))
+
+	fit<-lmFit(em,design)
+	cont.matrix<-makeContrasts(cancer-normal,levels=design)
+	fit2<-contrasts.fit(fit,cont.matrix)
+	fit2<-eBayes(fit2,trend=TRUE,robust=TRUE)
+
+	odf<-cbind.data.frame(l_nonzero_ratio[is_expressed],fit2$coefficients,fit2$p.value)
+	odf$tRF<-row.names(odf)
+	colnames(odf)<-c("nonzero_ratio","coefficient_difference","p","tRF")
+	odf<-odf[,c("tRF","nonzero_ratio","coefficient_difference","p")]
+	write.csv(odf,"/Path/Of/Result",sep=''),row.names=FALSE)
+}
+else{
+	message(paste("No Sufficient Sample"))
+}
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+2. Calculate Spearman's correlation between tRF expression abundance and tumor stage (Python):
+
+import pandas as pd
+import numpy as np
+from scipy.stats import spearmanr
+
+nonzero_ratio_threshold=0.1
+df_sample=pd.read_csv("/Path/Of/Sample/Sheet",dtype=str)
+em=pd.read_csv("/Path/Of/tRF/Expression/Matrix",index_col=0)
+
+n_threshold=10
+if (l_n>=n_threshold).sum()>=3:
+	em_tumor_stage1=em[sample_tumor_stage1]
+	em_tumor_stage2=em[sample_tumor_stage2]
+	em_tumor_stage3=em[sample_tumor_stage3]
+	em_tumor_stage4=em[sample_tumor_stage4]
+	
+	a=[]
+	for tRF in em.index.values:
+		rpm_tumor_stage1=em_tumor_stage1.loc[tRF,:].values
+		rpm_tumor_stage2=em_tumor_stage2.loc[tRF,:].values
+		rpm_tumor_stage3=em_tumor_stage3.loc[tRF,:].values
+		rpm_tumor_stage4=em_tumor_stage4.loc[tRF,:].values
+		rpm=np.concatenate([rpm_tumor_stage1,rpm_tumor_stage2,rpm_tumor_stage3,rpm_tumor_stage4])
+		tumor_stage=np.concatenate([[1]*len(rpm_tumor_stage1),[2]*len(rpm_tumor_stage2),[3]*len(rpm_tumor_stage3),[4]*len(rpm_tumor_stage4)])
+		
+		r_spearman,p_spearman,nonzero_ratio=np.nan,np.nan,np.nan
+		if np.var(rpm)!=0:
+			nonzero_ratio=np.sum(rpm>0)/len(rpm)
+			if nonzero_ratio<nonzero_ratio_threshold:
+				continue
+			r_spearman,p_spearman=spearmanr(rpm,tumor_stage)
+			a.append([tRF,nonzero_ratio,r_spearman,p_spearman])
+		
+	odf=pd.DataFrame(a,columns=["tRF","nonzero_ratio","spearman-r","spearman-p"])
+	odf.to_csv("/Path/Of/Result",index=None)
+	
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+3. Screen the tRFs correlated with patient survial using multivariate Cox regression model (Python):
+
+import pandas as pd
+import numpy as np
+from lifelines import CoxPHFitter
+import warnings
+warnings.filterwarnings('error')
+import itertools
+
+def genSurvivalAnalysisDataFrame(df_sample):
+    
+    df_sample=df_sample.copy()
+    df_survival_analysis=df_sample[
+        (df_sample["is_cancer"]=="1")&
+        (df_sample["age"]!="'--")&
+        (df_sample["gender"]!="not reported")&
+        (df_sample["race"]!="not reported")&
+        (df_sample["duration"]!="'--")&
+        (df_sample["is_dead"]!="'--")
+    ].reset_index().iloc[:,1:].copy()
+    if len(df_survival_analysis)==0:
+        return df_survival_analysis,[]
+    
+    df_survival_analysis["age"]=df_survival_analysis["age"].astype(int)
+    df_survival_analysis["duration"]=df_survival_analysis["duration"].astype(int)
+    df_survival_analysis["is_dead"]=df_survival_analysis["is_dead"].astype(int)
+    df_survival_analysis=pd.concat([
+        df_survival_analysis,
+        pd.get_dummies(df_survival_analysis["gender"],"gender"),
+        pd.get_dummies(df_survival_analysis["race"],"race")
+    ],axis=1)
+    df_survival_analysis.columns=['_'.join(col.split(' ')) for col in df_survival_analysis.columns.values]
+    cols=list(df_survival_analysis.columns.values)
+    cols.remove("duration");cols.remove("is_dead");cols.append("duration");cols.append("is_dead")
+    df_survival_analysis=df_survival_analysis[cols].reset_index().iloc[:,1:].copy()
+    
+    candidate_variable=[]
+    for col in df_survival_analysis.columns.values:
+        if col=="age" or col.startswith("gender_") or col.startswith("race_"):
+            if col!="age":
+                if (pd.crosstab(df_survival_analysis[col],df_survival_analysis["is_dead"])==0).sum().sum()>0:
+                    continue
+            candidate_variable.append(col)
+
+    l_variable_combination=[
+        list(comb) for i in range(1,len(candidate_variable)+1) \
+        for comb in itertools.combinations(candidate_variable,i)
+    ]
+    
+    feasible_comb=[]
+    max_n_variable=0
+    for comb in l_variable_combination:
+        n_variable=len(comb)
+        formula='+'.join(comb)
+        try:
+            cph=CoxPHFitter()
+            cph.fit(df=df_survival_analysis,duration_col="duration",event_col="is_dead",formula=formula)
+            if n_variable>max_n_variable:
+                max_n_variable=n_variable
+                feasible_comb=comb
+        except Exception:
+            pass    
+    
+    return df_survival_analysis,feasible_comb
+	
+nonzero_ratio_threshold=0.1
+df_sample=pd.read_csv("/Path/Of/Sample/Sheet",dtype=str)
+em=pd.read_csv("/Path/Of/tRF/Expression/Matrix",index_col=0)
+	
+df_survival_analysis,cox_variable=genSurvivalAnalysisDataFrame(df_sample)
+sample_survival_analysis=df_survival_analysis["sample_id"].values
+cox_variable.append("RPM")
+formula="+".join(cox_variable)
+
+n_threshold=25
+if len(sample_survival_analysis)>=n_threshold:
+	em_survival_analysis=em[sample_survival_analysis]
+	
+	a=[]
+	for tRF in em.index.values:
+		rpm=em_survival_analysis.loc[tRF,:].values
+		
+		beta_cox,p_cox,nonzero_ratio=np.nan,np.nan,np.nan
+		if np.var(rpm)!=0:
+			nonzero_ratio=np.sum(rpm>0)/len(rpm)
+			if nonzero_ratio<nonzero_ratio_threshold:
+				continue
+			df_survival_analysis["RPM"]=rpm
+			
+			try:
+				cph=CoxPHFitter()
+				cph.fit(df=df_survival_analysis,duration_col="duration",event_col="is_dead",formula=formula)
+				cph_summary=cph.summary
+				beta_cox,p_cox=cph_summary.loc["RPM","coef"],cph_summary.loc["RPM","p"]
+				a.append([tRF,nonzero_ratio,beta_cox,p_cox])
+			except:
+				pass                                          
+	
+	odf=pd.DataFrame(a,columns=["tRF","nonzero_ratio","cox-beta","cox-p"])
+	odf.to_csv("/Path/Of/Result",index=None)

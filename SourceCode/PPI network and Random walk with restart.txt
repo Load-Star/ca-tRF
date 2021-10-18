@@ -1,0 +1,56 @@
+The following python code demonstrate how to construct PPI network and how the random walk with restart works.
+"/Path/Of/PPI" in the code is the directory of the file recording protein-protein interactions (See "Dataset/PPT.csv").
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+import numpy as np
+import pandas as pd
+import networkx
+
+df_PPI=pd.read_csv("/Path/Of/PPI")
+PPI_network=networkx.Graph()
+for i in range(len(df_PPI)):
+    gene1,gene2=df_PPI["symbol1"][i],df_PPI["symbol2"][i]
+    PPI_network.add_edge(gene1,gene1)
+    PPI_network.add_edge(gene2,gene2)
+    PPI_network.add_edge(gene1,gene2)
+    PPI_network.add_edge(gene2,gene1)
+
+def restartRandomWalk(network,l_query,restart_p=1/2,max_iter=1000,epsilon=1e-10,cumulative_p_threshold=1/4):
+	'''
+	network is the PPI_network constructed before
+	l_query is the list of seed genes
+	restart_p is the restart probability
+	this function will return the top genes whose cumulative probability reach at cumulative_p_threshold
+	'''
+
+    l_node=list(networkx.nodes(network))
+    set_node=set(l_node)
+    neighbor_matrix=np.array(networkx.adj_matrix(network).todense())
+    transition_matrix_T=neighbor_matrix/np.sum(np.array(neighbor_matrix),axis=0)
+
+    set_query=set(l_query)&set_node
+
+    if len(set_query)==0:
+        return list()
+
+    s_init=pd.Series(0,index=l_node)
+    for item in set_query:
+        s_init[item]=1
+    s_init/=np.sum(s_init)
+    p_init=s_init.values.reshape(-1,1)
+    p=s_init.values.reshape(-1,1)
+
+    l_p=[]
+    l_p.append(p.reshape(-1))
+    for i in range(max_iter):
+        p=(1-restart_p)*np.dot(transition_matrix_T,p)+restart_p*p_init
+        l_p.append(p.reshape(-1))
+        if np.sum((l_p[-1]-l_p[-2])**2)<=epsilon:
+            break
+    s_result=pd.Series(l_p[-1],index=l_node).sort_values(ascending=False)
+    cumulative_p=0
+    for i in range(len(s_result)):
+        cumulative_p+=s_result.iloc[i]
+        if cumulative_p>=cumulative_p_threshold:
+            break
+    return list(s_result.index.values[:i+1])

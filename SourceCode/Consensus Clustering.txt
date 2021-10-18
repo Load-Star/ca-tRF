@@ -1,0 +1,19 @@
+The following R code perform consensus clustering based on ca-tRF expression matrix, .
+"/Path/Of/ca-tRF/Expression/Matrix" in the code is the directory of the ca-tRF expression matrix (".csv" format).
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+library("ConsensusClusterPlus")
+
+em <- read.table(
+	"/Path/Of/ca-tRF/Expression/Matrix",
+	header=TRUE, row.names=1, sep=',', check.names=FALSE, na.strings = c())
+print(paste(nrow(em),ncol(em),sep=','))
+
+distance_matrix <- distance(x = t(em), method = "euclidean")
+distance_matrix[distance_matrix<0]=0
+distance_matrix[is.na(distance_matrix)]=0
+distance_triangle<-as.dist(distance_matrix)
+
+consensus_cluster_result <- ConsensusClusterPlus(distance_triangle, maxK = 10, reps=100, pItem=0.8, pFeature=1, clusterAlg = "pam",
+					 title = "Result",writeTable = TRUE, plot = "png")
+calcICL(consensus_cluster_result, title = "Result", plot = "png")
