@@ -1,0 +1,492 @@
+sample_id,participant_id,project,is_cancer,age,age_group,gender,tumor_stage,numeric_tumor_stage,race,days_to_last_follow_up,days_to_death,duration,is_dead
+TCGA-4C-A93U-Cancer,TCGA-4C-A93U,TCGA-THCA,1,74,70+,female,stage iva,4,black or african american,129,'--,4,0
+TCGA-BJ-A0YZ-Cancer,TCGA-BJ-A0YZ,TCGA-THCA,1,65,60+,male,stage ii,2,white,754,'--,25,0
+TCGA-BJ-A0Z0-Cancer,TCGA-BJ-A0Z0,TCGA-THCA,1,55,50+,male,stage ii,2,not reported,419,'--,13,0
+TCGA-BJ-A0Z2-Cancer,TCGA-BJ-A0Z2,TCGA-THCA,1,57,50+,male,stage ivc,4,black or african american,1514,'--,50,0
+TCGA-BJ-A0Z3-Cancer,TCGA-BJ-A0Z3,TCGA-THCA,1,33,30+,female,stage i,1,white,497,'--,16,0
+TCGA-BJ-A0Z9-Cancer,TCGA-BJ-A0Z9,TCGA-THCA,1,57,50+,female,stage iii,3,white,1257,'--,41,0
+TCGA-BJ-A0ZA-Cancer,TCGA-BJ-A0ZA,TCGA-THCA,1,67,60+,female,stage ii,2,white,574,'--,19,0
+TCGA-BJ-A0ZB-Cancer,TCGA-BJ-A0ZB,TCGA-THCA,1,66,60+,male,stage iva,4,white,122,'--,4,0
+TCGA-BJ-A0ZC-Cancer,TCGA-BJ-A0ZC,TCGA-THCA,1,55,50+,male,stage i,1,white,352,'--,11,0
+TCGA-BJ-A0ZE-Cancer,TCGA-BJ-A0ZE,TCGA-THCA,1,63,60+,female,stage iii,3,white,509,'--,16,0
+TCGA-BJ-A0ZF-Cancer,TCGA-BJ-A0ZF,TCGA-THCA,1,54,50+,female,stage ii,2,white,1217,'--,40,0
+TCGA-BJ-A0ZH-Cancer,TCGA-BJ-A0ZH,TCGA-THCA,1,52,50+,female,stage iva,4,white,460,'--,15,0
+TCGA-BJ-A0ZJ-Cancer,TCGA-BJ-A0ZJ,TCGA-THCA,1,36,30+,male,stage i,1,white,1280,'--,42,0
+TCGA-BJ-A18Y-Cancer,TCGA-BJ-A18Y,TCGA-THCA,1,29,20+,male,stage i,1,white,1563,'--,52,0
+TCGA-BJ-A18Z-Cancer,TCGA-BJ-A18Z,TCGA-THCA,1,58,50+,male,stage iva,4,white,1263,'--,42,0
+TCGA-BJ-A191-Cancer,TCGA-BJ-A191,TCGA-THCA,1,49,40+,female,stage i,1,white,147,'--,4,0
+TCGA-BJ-A192-Cancer,TCGA-BJ-A192,TCGA-THCA,1,54,50+,female,stage iii,3,white,1349,'--,44,0
+TCGA-BJ-A28R-Cancer,TCGA-BJ-A28R,TCGA-THCA,1,38,30+,female,stage i,1,white,1282,'--,42,0
+TCGA-BJ-A28R-Normal,TCGA-BJ-A28R,TCGA-THCA,0,38,30+,female,stage i,0,white,1282,'--,42,0
+TCGA-BJ-A28S-Cancer,TCGA-BJ-A28S,TCGA-THCA,1,79,70+,male,stage ii,2,white,640,'--,21,0
+TCGA-BJ-A28V-Cancer,TCGA-BJ-A28V,TCGA-THCA,1,80,80+,female,stage iii,3,white,987,'--,32,0
+TCGA-BJ-A28X-Cancer,TCGA-BJ-A28X,TCGA-THCA,1,32,30+,female,stage i,1,white,942,'--,31,0
+TCGA-BJ-A28X-Normal,TCGA-BJ-A28X,TCGA-THCA,0,32,30+,female,stage i,0,white,942,'--,31,0
+TCGA-BJ-A28Z-Cancer,TCGA-BJ-A28Z,TCGA-THCA,1,46,40+,female,stage iii,3,white,337,'--,11,0
+TCGA-BJ-A290-Cancer,TCGA-BJ-A290,TCGA-THCA,1,70,70+,male,stage iii,3,white,919,'--,30,0
+TCGA-BJ-A290-Normal,TCGA-BJ-A290,TCGA-THCA,0,70,70+,male,stage iii,0,white,919,'--,30,0
+TCGA-BJ-A291-Cancer,TCGA-BJ-A291,TCGA-THCA,1,56,50+,female,stage i,1,white,696,'--,23,0
+TCGA-BJ-A2N7-Cancer,TCGA-BJ-A2N7,TCGA-THCA,1,30,30+,female,stage i,1,white,559,'--,18,0
+TCGA-BJ-A2N7-Normal,TCGA-BJ-A2N7,TCGA-THCA,0,30,30+,female,stage i,0,white,559,'--,18,0
+TCGA-BJ-A2N8-Cancer,TCGA-BJ-A2N8,TCGA-THCA,1,30,30+,female,stage i,1,white,504,'--,16,0
+TCGA-BJ-A2N8-Normal,TCGA-BJ-A2N8,TCGA-THCA,0,30,30+,female,stage i,0,white,504,'--,16,0
+TCGA-BJ-A2N9-Cancer,TCGA-BJ-A2N9,TCGA-THCA,1,42,40+,female,stage i,1,white,623,'--,20,0
+TCGA-BJ-A2N9-Normal,TCGA-BJ-A2N9,TCGA-THCA,0,42,40+,female,stage i,0,white,623,'--,20,0
+TCGA-BJ-A2NA-Cancer,TCGA-BJ-A2NA,TCGA-THCA,1,77,70+,male,stage iii,3,white,577,'--,19,0
+TCGA-BJ-A2NA-Normal,TCGA-BJ-A2NA,TCGA-THCA,0,77,70+,male,stage iii,0,white,577,'--,19,0
+TCGA-BJ-A2P4-Cancer,TCGA-BJ-A2P4,TCGA-THCA,1,29,20+,female,stage i,1,white,390,'--,13,0
+TCGA-BJ-A3EZ-Cancer,TCGA-BJ-A3EZ,TCGA-THCA,1,51,50+,male,stage iva,4,white,487,'--,16,0
+TCGA-BJ-A3F0-Cancer,TCGA-BJ-A3F0,TCGA-THCA,1,64,60+,female,stage i,1,white,424,'--,14,0
+TCGA-BJ-A3PT-Cancer,TCGA-BJ-A3PT,TCGA-THCA,1,51,50+,female,stage iii,3,white,709,'--,23,0
+TCGA-BJ-A3PU-Cancer,TCGA-BJ-A3PU,TCGA-THCA,1,52,50+,male,stage iii,3,white,567,'--,18,0
+TCGA-BJ-A3PU-Normal,TCGA-BJ-A3PU,TCGA-THCA,0,52,50+,male,stage iii,0,white,567,'--,18,0
+TCGA-BJ-A45C-Cancer,TCGA-BJ-A45C,TCGA-THCA,1,78,70+,male,stage iii,3,black or african american,175,243,8,1
+TCGA-BJ-A45D-Cancer,TCGA-BJ-A45D,TCGA-THCA,1,36,30+,male,stage i,1,white,331,'--,11,0
+TCGA-BJ-A45E-Cancer,TCGA-BJ-A45E,TCGA-THCA,1,46,40+,female,stage i,1,white,639,'--,21,0
+TCGA-BJ-A45F-Cancer,TCGA-BJ-A45F,TCGA-THCA,1,59,50+,female,stage i,1,white,105,'--,3,0
+TCGA-BJ-A45G-Cancer,TCGA-BJ-A45G,TCGA-THCA,1,48,40+,female,stage iii,3,white,725,'--,24,0
+TCGA-BJ-A45H-Cancer,TCGA-BJ-A45H,TCGA-THCA,1,45,40+,male,stage iii,3,white,865,'--,28,0
+TCGA-BJ-A45I-Cancer,TCGA-BJ-A45I,TCGA-THCA,1,51,50+,female,stage iii,3,white,470,'--,15,0
+TCGA-BJ-A45J-Cancer,TCGA-BJ-A45J,TCGA-THCA,1,39,30+,female,stage i,1,white,658,'--,21,0
+TCGA-BJ-A45K-Cancer,TCGA-BJ-A45K,TCGA-THCA,1,33,30+,male,stage i,1,white,705,'--,23,0
+TCGA-BJ-A4O8-Cancer,TCGA-BJ-A4O8,TCGA-THCA,1,47,40+,male,stage iii,3,white,591,'--,19,0
+TCGA-BJ-A4O9-Cancer,TCGA-BJ-A4O9,TCGA-THCA,1,51,50+,female,stage ii,2,white,714,'--,23,0
+TCGA-CE-A13K-Cancer,TCGA-CE-A13K,TCGA-THCA,1,30,30+,female,stage i,1,asian,385,'--,12,0
+TCGA-CE-A3MD-Cancer,TCGA-CE-A3MD,TCGA-THCA,1,31,30+,male,stage i,1,asian,389,'--,12,0
+TCGA-CE-A3ME-Cancer,TCGA-CE-A3ME,TCGA-THCA,1,51,50+,female,stage ii,2,asian,379,'--,12,0
+TCGA-CE-A481-Cancer,TCGA-CE-A481,TCGA-THCA,1,41,40+,female,stage i,1,asian,346,'--,11,0
+TCGA-CE-A482-Cancer,TCGA-CE-A482,TCGA-THCA,1,27,20+,female,stage i,1,asian,325,'--,10,0
+TCGA-CE-A483-Cancer,TCGA-CE-A483,TCGA-THCA,1,34,30+,female,stage i,1,asian,457,'--,15,0
+TCGA-CE-A484-Cancer,TCGA-CE-A484,TCGA-THCA,1,37,30+,female,stage i,1,asian,378,'--,12,0
+TCGA-CE-A485-Cancer,TCGA-CE-A485,TCGA-THCA,1,32,30+,male,stage i,1,asian,385,'--,12,0
+TCGA-DE-A0XZ-Cancer,TCGA-DE-A0XZ,TCGA-THCA,1,65,60+,female,stage iii,3,white,1090,'--,36,0
+TCGA-DE-A3KN-Cancer,TCGA-DE-A3KN,TCGA-THCA,1,49,40+,female,stage iva,4,white,831,'--,27,0
+TCGA-DE-A4M8-Cancer,TCGA-DE-A4M8,TCGA-THCA,1,61,60+,female,stage iii,3,white,564,'--,18,0
+TCGA-DE-A4MA-Cancer,TCGA-DE-A4MA,TCGA-THCA,1,52,50+,female,stage iii,3,black or african american,916,'--,30,0
+TCGA-DE-A4MB-Cancer,TCGA-DE-A4MB,TCGA-THCA,1,79,70+,female,stage iva,4,white,352,'--,11,0
+TCGA-DE-A4MC-Cancer,TCGA-DE-A4MC,TCGA-THCA,1,43,40+,female,stage i,1,american indian or alaska native,913,'--,30,0
+TCGA-DE-A4MD-Cancer,TCGA-DE-A4MD,TCGA-THCA,1,71,70+,male,stage iva,4,white,764,'--,25,0
+TCGA-DE-A69J-Cancer,TCGA-DE-A69J,TCGA-THCA,1,34,30+,female,stage i,1,black or african american,447,'--,14,0
+TCGA-DE-A69K-Cancer,TCGA-DE-A69K,TCGA-THCA,1,58,50+,female,stage iii,3,black or african american,434,'--,14,0
+TCGA-DE-A7U5-Cancer,TCGA-DE-A7U5,TCGA-THCA,1,36,30+,female,stage i,1,black or african american,84,'--,2,0
+TCGA-DJ-A13L-Cancer,TCGA-DJ-A13L,TCGA-THCA,1,85,80+,male,stage i,1,white,303,'--,10,0
+TCGA-DJ-A13M-Cancer,TCGA-DJ-A13M,TCGA-THCA,1,28,20+,female,stage i,1,white,1484,'--,49,0
+TCGA-DJ-A13O-Cancer,TCGA-DJ-A13O,TCGA-THCA,1,56,50+,male,stage i,1,white,1161,'--,38,0
+TCGA-DJ-A13P-Cancer,TCGA-DJ-A13P,TCGA-THCA,1,52,50+,female,stage ii,2,white,5150,'--,171,0
+TCGA-DJ-A13S-Cancer,TCGA-DJ-A13S,TCGA-THCA,1,19,10+,female,stage i,1,white,265,'--,8,0
+TCGA-DJ-A13T-Cancer,TCGA-DJ-A13T,TCGA-THCA,1,37,30+,female,stage i,1,white,1709,'--,56,0
+TCGA-DJ-A13U-Cancer,TCGA-DJ-A13U,TCGA-THCA,1,60,60+,male,stage iii,3,white,1590,'--,53,0
+TCGA-DJ-A13X-Cancer,TCGA-DJ-A13X,TCGA-THCA,1,51,50+,female,stage iii,3,not reported,253,'--,8,0
+TCGA-DJ-A1QD-Cancer,TCGA-DJ-A1QD,TCGA-THCA,1,20,20+,female,stage i,1,white,1462,'--,48,0
+TCGA-DJ-A1QE-Cancer,TCGA-DJ-A1QE,TCGA-THCA,1,62,60+,female,stage iii,3,white,4134,'--,137,0
+TCGA-DJ-A1QF-Cancer,TCGA-DJ-A1QF,TCGA-THCA,1,61,60+,female,stage ii,2,white,931,'--,31,0
+TCGA-DJ-A1QG-Cancer,TCGA-DJ-A1QG,TCGA-THCA,1,62,60+,male,stage i,1,white,1368,'--,45,0
+TCGA-DJ-A1QH-Cancer,TCGA-DJ-A1QH,TCGA-THCA,1,58,50+,female,stage iii,3,white,1293,'--,43,0
+TCGA-DJ-A1QI-Cancer,TCGA-DJ-A1QI,TCGA-THCA,1,63,60+,female,stage ii,2,white,455,'--,15,0
+TCGA-DJ-A1QL-Cancer,TCGA-DJ-A1QL,TCGA-THCA,1,70,70+,male,stage ii,2,not reported,535,'--,17,0
+TCGA-DJ-A1QM-Cancer,TCGA-DJ-A1QM,TCGA-THCA,1,42,40+,male,stage i,1,white,183,'--,6,0
+TCGA-DJ-A1QN-Cancer,TCGA-DJ-A1QN,TCGA-THCA,1,42,40+,female,stage i,1,not reported,1295,'--,43,0
+TCGA-DJ-A1QO-Cancer,TCGA-DJ-A1QO,TCGA-THCA,1,69,60+,male,stage iii,3,white,1442,'--,48,0
+TCGA-DJ-A1QQ-Cancer,TCGA-DJ-A1QQ,TCGA-THCA,1,43,40+,male,stage i,1,asian,534,'--,17,0
+TCGA-DJ-A2PN-Cancer,TCGA-DJ-A2PN,TCGA-THCA,1,70,70+,female,stage i,1,white,307,'--,10,0
+TCGA-DJ-A2PO-Cancer,TCGA-DJ-A2PO,TCGA-THCA,1,54,50+,male,stage i,1,white,243,'--,8,0
+TCGA-DJ-A2PP-Cancer,TCGA-DJ-A2PP,TCGA-THCA,1,47,40+,male,stage ii,2,not reported,930,'--,31,0
+TCGA-DJ-A2PQ-Cancer,TCGA-DJ-A2PQ,TCGA-THCA,1,26,20+,male,stage i,1,white,1077,'--,35,0
+TCGA-DJ-A2PR-Cancer,TCGA-DJ-A2PR,TCGA-THCA,1,27,20+,male,stage i,1,asian,835,'--,27,0
+TCGA-DJ-A2PS-Cancer,TCGA-DJ-A2PS,TCGA-THCA,1,40,40+,female,stage i,1,white,797,'--,26,0
+TCGA-DJ-A2PT-Cancer,TCGA-DJ-A2PT,TCGA-THCA,1,70,70+,female,stage iii,3,white,1181,'--,39,0
+TCGA-DJ-A2PU-Cancer,TCGA-DJ-A2PU,TCGA-THCA,1,52,50+,female,stage ii,2,white,1033,'--,34,0
+TCGA-DJ-A2PV-Cancer,TCGA-DJ-A2PV,TCGA-THCA,1,53,50+,female,stage ii,2,white,973,'--,32,0
+TCGA-DJ-A2PW-Cancer,TCGA-DJ-A2PW,TCGA-THCA,1,65,60+,male,stage iii,3,white,1060,'--,35,0
+TCGA-DJ-A2PY-Cancer,TCGA-DJ-A2PY,TCGA-THCA,1,46,40+,female,stage iii,3,white,267,'--,8,0
+TCGA-DJ-A2PZ-Cancer,TCGA-DJ-A2PZ,TCGA-THCA,1,63,60+,male,stage iii,3,white,256,'--,8,0
+TCGA-DJ-A2Q1-Cancer,TCGA-DJ-A2Q1,TCGA-THCA,1,44,40+,female,stage i,1,white,1148,'--,38,0
+TCGA-DJ-A2Q2-Cancer,TCGA-DJ-A2Q2,TCGA-THCA,1,57,50+,female,stage iii,3,white,1337,'--,44,0
+TCGA-DJ-A2Q3-Cancer,TCGA-DJ-A2Q3,TCGA-THCA,1,61,60+,female,stage iii,3,asian,1224,'--,40,0
+TCGA-DJ-A2Q4-Cancer,TCGA-DJ-A2Q4,TCGA-THCA,1,53,50+,male,stage iii,3,white,1032,'--,34,0
+TCGA-DJ-A2Q5-Cancer,TCGA-DJ-A2Q5,TCGA-THCA,1,51,50+,male,stage iva,4,white,1140,'--,38,0
+TCGA-DJ-A2Q6-Cancer,TCGA-DJ-A2Q6,TCGA-THCA,1,38,30+,female,stage i,1,white,1109,'--,36,0
+TCGA-DJ-A2Q7-Cancer,TCGA-DJ-A2Q7,TCGA-THCA,1,52,50+,female,stage iii,3,asian,1068,'--,35,0
+TCGA-DJ-A2QA-Cancer,TCGA-DJ-A2QA,TCGA-THCA,1,56,50+,female,stage iii,3,asian,1020,'--,34,0
+TCGA-DJ-A2QB-Cancer,TCGA-DJ-A2QB,TCGA-THCA,1,53,50+,female,stage iva,4,asian,1070,'--,35,0
+TCGA-DJ-A2QC-Cancer,TCGA-DJ-A2QC,TCGA-THCA,1,70,70+,female,stage ii,2,not reported,1215,'--,40,0
+TCGA-DJ-A3UK-Cancer,TCGA-DJ-A3UK,TCGA-THCA,1,35,30+,female,stage i,1,white,1123,'--,37,0
+TCGA-DJ-A3UM-Cancer,TCGA-DJ-A3UM,TCGA-THCA,1,45,40+,female,stage i,1,asian,944,'--,31,0
+TCGA-DJ-A3UN-Cancer,TCGA-DJ-A3UN,TCGA-THCA,1,51,50+,female,stage i,1,white,986,'--,32,0
+TCGA-DJ-A3UO-Cancer,TCGA-DJ-A3UO,TCGA-THCA,1,63,60+,male,stage iva,4,white,957,'--,31,0
+TCGA-DJ-A3UP-Cancer,TCGA-DJ-A3UP,TCGA-THCA,1,38,30+,female,stage i,1,not reported,499,'--,16,0
+TCGA-DJ-A3UQ-Cancer,TCGA-DJ-A3UQ,TCGA-THCA,1,45,40+,female,stage iii,3,asian,595,'--,19,0
+TCGA-DJ-A3UR-Cancer,TCGA-DJ-A3UR,TCGA-THCA,1,51,50+,female,stage iii,3,white,1105,'--,36,0
+TCGA-DJ-A3US-Cancer,TCGA-DJ-A3US,TCGA-THCA,1,37,30+,female,stage i,1,white,998,'--,33,0
+TCGA-DJ-A3UT-Cancer,TCGA-DJ-A3UT,TCGA-THCA,1,43,40+,female,stage i,1,white,1105,'--,36,0
+TCGA-DJ-A3UU-Cancer,TCGA-DJ-A3UU,TCGA-THCA,1,49,40+,female,stage iii,3,white,713,'--,23,0
+TCGA-DJ-A3UW-Cancer,TCGA-DJ-A3UW,TCGA-THCA,1,50,50+,female,stage i,1,white,1812,'--,60,0
+TCGA-DJ-A3UX-Cancer,TCGA-DJ-A3UX,TCGA-THCA,1,46,40+,female,stage i,1,white,345,'--,11,0
+TCGA-DJ-A3UY-Cancer,TCGA-DJ-A3UY,TCGA-THCA,1,32,30+,female,stage i,1,white,1091,'--,36,0
+TCGA-DJ-A3V0-Cancer,TCGA-DJ-A3V0,TCGA-THCA,1,56,50+,male,stage iva,4,not reported,1125,'--,37,0
+TCGA-DJ-A3V2-Cancer,TCGA-DJ-A3V2,TCGA-THCA,1,44,40+,female,stage i,1,white,615,'--,20,0
+TCGA-DJ-A3V3-Cancer,TCGA-DJ-A3V3,TCGA-THCA,1,57,50+,female,stage ii,2,asian,931,'--,31,0
+TCGA-DJ-A3V4-Cancer,TCGA-DJ-A3V4,TCGA-THCA,1,60,60+,female,stage iii,3,white,1294,'--,43,0
+TCGA-DJ-A3V5-Cancer,TCGA-DJ-A3V5,TCGA-THCA,1,76,70+,female,stage iii,3,white,584,'--,19,0
+TCGA-DJ-A3V6-Cancer,TCGA-DJ-A3V6,TCGA-THCA,1,54,50+,male,stage iii,3,white,818,'--,27,0
+TCGA-DJ-A3V7-Cancer,TCGA-DJ-A3V7,TCGA-THCA,1,44,40+,female,stage iii,3,white,706,'--,23,0
+TCGA-DJ-A3V8-Cancer,TCGA-DJ-A3V8,TCGA-THCA,1,28,20+,female,stage i,1,white,647,'--,21,0
+TCGA-DJ-A3V9-Cancer,TCGA-DJ-A3V9,TCGA-THCA,1,50,50+,female,stage iva,4,white,623,'--,20,0
+TCGA-DJ-A3VA-Cancer,TCGA-DJ-A3VA,TCGA-THCA,1,39,30+,female,stage i,1,not reported,755,'--,25,0
+TCGA-DJ-A3VB-Cancer,TCGA-DJ-A3VB,TCGA-THCA,1,52,50+,male,stage iii,3,not reported,697,'--,23,0
+TCGA-DJ-A3VD-Cancer,TCGA-DJ-A3VD,TCGA-THCA,1,32,30+,female,stage i,1,white,1238,'--,41,0
+TCGA-DJ-A3VE-Cancer,TCGA-DJ-A3VE,TCGA-THCA,1,50,50+,male,stage i,1,white,577,'--,19,0
+TCGA-DJ-A3VF-Cancer,TCGA-DJ-A3VF,TCGA-THCA,1,60,60+,female,stage iva,4,white,292,'--,9,0
+TCGA-DJ-A3VG-Cancer,TCGA-DJ-A3VG,TCGA-THCA,1,40,40+,male,stage i,1,white,1085,'--,36,0
+TCGA-DJ-A3VI-Cancer,TCGA-DJ-A3VI,TCGA-THCA,1,52,50+,female,stage iii,3,white,95,'--,3,0
+TCGA-DJ-A3VJ-Cancer,TCGA-DJ-A3VJ,TCGA-THCA,1,22,20+,male,stage i,1,white,1108,'--,36,0
+TCGA-DJ-A3VK-Cancer,TCGA-DJ-A3VK,TCGA-THCA,1,63,60+,male,stage iii,3,white,753,'--,25,0
+TCGA-DJ-A3VL-Cancer,TCGA-DJ-A3VL,TCGA-THCA,1,38,30+,male,stage i,1,white,713,'--,23,0
+TCGA-DJ-A3VM-Cancer,TCGA-DJ-A3VM,TCGA-THCA,1,68,60+,female,stage ii,2,white,840,'--,28,0
+TCGA-DJ-A4UL-Cancer,TCGA-DJ-A4UL,TCGA-THCA,1,68,60+,female,stage i,1,white,939,'--,31,0
+TCGA-DJ-A4UQ-Cancer,TCGA-DJ-A4UQ,TCGA-THCA,1,60,60+,male,stage iva,4,asian,1005,'--,33,0
+TCGA-DJ-A4UR-Cancer,TCGA-DJ-A4UR,TCGA-THCA,1,36,30+,female,stage ii,2,asian,1058,'--,35,0
+TCGA-DJ-A4UW-Cancer,TCGA-DJ-A4UW,TCGA-THCA,1,34,30+,female,stage i,1,asian,819,'--,27,0
+TCGA-DJ-A4V2-Cancer,TCGA-DJ-A4V2,TCGA-THCA,1,38,30+,female,stage i,1,not reported,95,'--,3,0
+TCGA-DJ-A4V4-Cancer,TCGA-DJ-A4V4,TCGA-THCA,1,48,40+,female,stage i,1,white,481,'--,16,0
+TCGA-DO-A1JZ-Cancer,TCGA-DO-A1JZ,TCGA-THCA,1,23,20+,female,stage i,1,black or african american,1670,'--,55,0
+TCGA-DO-A1JZ-Normal,TCGA-DO-A1JZ,TCGA-THCA,0,23,20+,female,stage i,0,black or african american,1670,'--,55,0
+TCGA-DO-A1K0-Cancer,TCGA-DO-A1K0,TCGA-THCA,1,30,30+,female,stage i,1,white,655,'--,21,0
+TCGA-E3-A3DY-Cancer,TCGA-E3-A3DY,TCGA-THCA,1,37,30+,male,stage i,1,white,2815,'--,93,0
+TCGA-E3-A3DZ-Cancer,TCGA-E3-A3DZ,TCGA-THCA,1,55,50+,female,stage iii,3,white,1436,'--,47,0
+TCGA-E3-A3E0-Cancer,TCGA-E3-A3E0,TCGA-THCA,1,34,30+,female,stage i,1,white,2019,'--,67,0
+TCGA-E3-A3E1-Cancer,TCGA-E3-A3E1,TCGA-THCA,1,46,40+,female,stage i,1,white,2449,'--,81,0
+TCGA-E3-A3E2-Cancer,TCGA-E3-A3E2,TCGA-THCA,1,34,30+,female,stage i,1,white,1922,'--,64,0
+TCGA-E3-A3E3-Cancer,TCGA-E3-A3E3,TCGA-THCA,1,49,40+,female,stage ii,2,white,1595,'--,53,0
+TCGA-E3-A3E5-Cancer,TCGA-E3-A3E5,TCGA-THCA,1,57,50+,male,stage iva,4,white,1215,'--,40,0
+TCGA-E8-A242-Cancer,TCGA-E8-A242,TCGA-THCA,1,56,50+,female,stage iii,3,white,950,'--,31,0
+TCGA-E8-A2EA-Cancer,TCGA-E8-A2EA,TCGA-THCA,1,52,50+,female,stage i,1,white,1085,'--,36,0
+TCGA-E8-A2JQ-Cancer,TCGA-E8-A2JQ,TCGA-THCA,1,18,10+,female,stage i,1,white,356,'--,11,0
+TCGA-E8-A2JQ-Normal,TCGA-E8-A2JQ,TCGA-THCA,0,18,10+,female,stage i,0,white,356,'--,11,0
+TCGA-E8-A3X7-Cancer,TCGA-E8-A3X7,TCGA-THCA,1,57,50+,female,stage iva,4,white,951,'--,31,0
+TCGA-E8-A413-Cancer,TCGA-E8-A413,TCGA-THCA,1,38,30+,female,stage i,1,asian,912,'--,30,0
+TCGA-E8-A414-Cancer,TCGA-E8-A414,TCGA-THCA,1,45,40+,female,stage iii,3,asian,958,'--,31,0
+TCGA-E8-A415-Cancer,TCGA-E8-A415,TCGA-THCA,1,39,30+,female,stage i,1,asian,944,'--,31,0
+TCGA-E8-A417-Cancer,TCGA-E8-A417,TCGA-THCA,1,38,30+,female,stage i,1,asian,938,'--,31,0
+TCGA-E8-A418-Cancer,TCGA-E8-A418,TCGA-THCA,1,75,70+,female,stage iva,4,white,92,'--,3,0
+TCGA-E8-A419-Cancer,TCGA-E8-A419,TCGA-THCA,1,30,30+,female,stage i,1,white,774,'--,25,0
+TCGA-E8-A432-Cancer,TCGA-E8-A432,TCGA-THCA,1,57,50+,female,stage ii,2,asian,931,'--,31,0
+TCGA-E8-A433-Cancer,TCGA-E8-A433,TCGA-THCA,1,25,20+,female,stage i,1,asian,951,'--,31,0
+TCGA-E8-A434-Cancer,TCGA-E8-A434,TCGA-THCA,1,56,50+,female,stage i,1,asian,953,'--,31,0
+TCGA-E8-A436-Cancer,TCGA-E8-A436,TCGA-THCA,1,53,50+,female,stage iva,4,asian,455,'--,15,0
+TCGA-E8-A437-Cancer,TCGA-E8-A437,TCGA-THCA,1,57,50+,female,stage i,1,white,1213,'--,40,0
+TCGA-E8-A44K-Cancer,TCGA-E8-A44K,TCGA-THCA,1,50,50+,female,stage i,1,asian,943,'--,31,0
+TCGA-EL-A3CL-Cancer,TCGA-EL-A3CL,TCGA-THCA,1,70,70+,female,stage ii,2,white,'--,963,32,1
+TCGA-EL-A3CM-Cancer,TCGA-EL-A3CM,TCGA-THCA,1,64,60+,female,stage iii,3,white,'--,813,27,1
+TCGA-EL-A3CN-Cancer,TCGA-EL-A3CN,TCGA-THCA,1,47,40+,female,stage ii,2,white,4731,'--,157,0
+TCGA-EL-A3CP-Cancer,TCGA-EL-A3CP,TCGA-THCA,1,50,50+,female,not reported,'--,black or african american,4831,'--,161,0
+TCGA-EL-A3CR-Cancer,TCGA-EL-A3CR,TCGA-THCA,1,78,70+,female,stage iii,3,white,'--,233,7,1
+TCGA-EL-A3CS-Cancer,TCGA-EL-A3CS,TCGA-THCA,1,62,60+,female,stage iva,4,white,'--,1385,46,1
+TCGA-EL-A3CT-Cancer,TCGA-EL-A3CT,TCGA-THCA,1,78,70+,female,stage iva,4,white,'--,1854,61,1
+TCGA-EL-A3CU-Cancer,TCGA-EL-A3CU,TCGA-THCA,1,70,70+,female,stage iii,3,white,4780,'--,159,0
+TCGA-EL-A3CV-Cancer,TCGA-EL-A3CV,TCGA-THCA,1,40,40+,male,stage i,1,white,1154,'--,38,0
+TCGA-EL-A3CX-Cancer,TCGA-EL-A3CX,TCGA-THCA,1,22,20+,female,stage i,1,white,3243,'--,108,0
+TCGA-EL-A3CZ-Cancer,TCGA-EL-A3CZ,TCGA-THCA,1,37,30+,female,stage i,1,white,2418,'--,80,0
+TCGA-EL-A3D0-Cancer,TCGA-EL-A3D0,TCGA-THCA,1,61,60+,male,stage iii,3,white,4254,'--,141,0
+TCGA-EL-A3D1-Cancer,TCGA-EL-A3D1,TCGA-THCA,1,39,30+,male,stage i,1,asian,2997,'--,99,0
+TCGA-EL-A3D5-Cancer,TCGA-EL-A3D5,TCGA-THCA,1,44,40+,female,stage i,1,white,1737,'--,57,0
+TCGA-EL-A3D6-Cancer,TCGA-EL-A3D6,TCGA-THCA,1,51,50+,female,stage iii,3,white,3296,'--,109,0
+TCGA-EL-A3GO-Cancer,TCGA-EL-A3GO,TCGA-THCA,1,31,30+,female,stage i,1,white,1973,'--,65,0
+TCGA-EL-A3GP-Cancer,TCGA-EL-A3GP,TCGA-THCA,1,70,70+,male,stage iii,3,black or african american,1506,'--,50,0
+TCGA-EL-A3GQ-Cancer,TCGA-EL-A3GQ,TCGA-THCA,1,72,70+,female,stage i,1,white,1528,'--,50,0
+TCGA-EL-A3GR-Cancer,TCGA-EL-A3GR,TCGA-THCA,1,31,30+,female,stage i,1,white,3501,'--,116,0
+TCGA-EL-A3GS-Cancer,TCGA-EL-A3GS,TCGA-THCA,1,37,30+,female,stage i,1,white,1989,'--,66,0
+TCGA-EL-A3GU-Cancer,TCGA-EL-A3GU,TCGA-THCA,1,72,70+,female,stage iii,3,white,4137,'--,137,0
+TCGA-EL-A3GV-Cancer,TCGA-EL-A3GV,TCGA-THCA,1,65,60+,female,stage iii,3,white,1532,'--,51,0
+TCGA-EL-A3GW-Cancer,TCGA-EL-A3GW,TCGA-THCA,1,37,30+,female,stage i,1,white,1527,'--,50,0
+TCGA-EL-A3GX-Cancer,TCGA-EL-A3GX,TCGA-THCA,1,41,40+,female,stage i,1,white,4494,'--,149,0
+TCGA-EL-A3GY-Cancer,TCGA-EL-A3GY,TCGA-THCA,1,40,40+,female,stage ii,2,white,3076,'--,102,0
+TCGA-EL-A3GZ-Cancer,TCGA-EL-A3GZ,TCGA-THCA,1,34,30+,female,stage i,1,white,4258,'--,141,0
+TCGA-EL-A3GZ-Normal,TCGA-EL-A3GZ,TCGA-THCA,0,34,30+,female,stage i,0,white,4258,'--,141,0
+TCGA-EL-A3H1-Cancer,TCGA-EL-A3H1,TCGA-THCA,1,66,60+,female,stage i,1,black or african american,'--,1500,50,1
+TCGA-EL-A3H1-Normal,TCGA-EL-A3H1,TCGA-THCA,0,66,60+,female,stage i,0,black or african american,'--,1500,50,1
+TCGA-EL-A3H2-Cancer,TCGA-EL-A3H2,TCGA-THCA,1,58,50+,male,stage ii,2,white,'--,1019,33,1
+TCGA-EL-A3H2-Normal,TCGA-EL-A3H2,TCGA-THCA,0,58,50+,male,stage ii,0,white,'--,1019,33,1
+TCGA-EL-A3H3-Cancer,TCGA-EL-A3H3,TCGA-THCA,1,19,10+,female,stage i,1,white,1319,'--,43,0
+TCGA-EL-A3H4-Cancer,TCGA-EL-A3H4,TCGA-THCA,1,46,40+,female,stage iva,4,black or african american,1512,'--,50,0
+TCGA-EL-A3H5-Cancer,TCGA-EL-A3H5,TCGA-THCA,1,57,50+,female,stage iva,4,white,2542,'--,84,0
+TCGA-EL-A3H7-Cancer,TCGA-EL-A3H7,TCGA-THCA,1,36,30+,female,stage i,1,white,4228,'--,140,0
+TCGA-EL-A3H7-Normal,TCGA-EL-A3H7,TCGA-THCA,0,36,30+,female,stage i,0,white,4228,'--,140,0
+TCGA-EL-A3H8-Cancer,TCGA-EL-A3H8,TCGA-THCA,1,35,30+,female,stage i,1,white,4577,'--,152,0
+TCGA-EL-A3MW-Cancer,TCGA-EL-A3MW,TCGA-THCA,1,55,50+,female,stage ii,2,white,3305,'--,110,0
+TCGA-EL-A3MW-Normal,TCGA-EL-A3MW,TCGA-THCA,0,55,50+,female,stage ii,0,white,3305,'--,110,0
+TCGA-EL-A3MX-Cancer,TCGA-EL-A3MX,TCGA-THCA,1,66,60+,female,stage ivc,4,white,'--,1753,58,1
+TCGA-EL-A3MX-Normal,TCGA-EL-A3MX,TCGA-THCA,0,66,60+,female,stage ivc,0,white,'--,1753,58,1
+TCGA-EL-A3MY-Cancer,TCGA-EL-A3MY,TCGA-THCA,1,81,80+,male,stage ivc,4,white,'--,533,17,1
+TCGA-EL-A3MY-Normal,TCGA-EL-A3MY,TCGA-THCA,0,81,80+,male,stage ivc,0,white,'--,533,17,1
+TCGA-EL-A3MZ-Cancer,TCGA-EL-A3MZ,TCGA-THCA,1,66,60+,male,stage iii,3,white,'--,1597,53,1
+TCGA-EL-A3N2-Cancer,TCGA-EL-A3N2,TCGA-THCA,1,24,20+,female,stage i,1,white,902,'--,30,0
+TCGA-EL-A3N2-Normal,TCGA-EL-A3N2,TCGA-THCA,0,24,20+,female,stage i,0,white,902,'--,30,0
+TCGA-EL-A3N3-Cancer,TCGA-EL-A3N3,TCGA-THCA,1,53,50+,female,stage ii,2,white,5423,'--,180,0
+TCGA-EL-A3N3-Normal,TCGA-EL-A3N3,TCGA-THCA,0,53,50+,female,stage ii,0,white,5423,'--,180,0
+TCGA-EL-A3T0-Cancer,TCGA-EL-A3T0,TCGA-THCA,1,45,40+,female,stage iii,3,white,4335,'--,144,0
+TCGA-EL-A3T0-Normal,TCGA-EL-A3T0,TCGA-THCA,0,45,40+,female,stage iii,0,white,4335,'--,144,0
+TCGA-EL-A3T1-Cancer,TCGA-EL-A3T1,TCGA-THCA,1,38,30+,female,stage i,1,black or african american,3941,'--,131,0
+TCGA-EL-A3T1-Normal,TCGA-EL-A3T1,TCGA-THCA,0,38,30+,female,stage i,0,black or african american,3941,'--,131,0
+TCGA-EL-A3T2-Cancer,TCGA-EL-A3T2,TCGA-THCA,1,55,50+,female,stage iii,3,white,988,'--,32,0
+TCGA-EL-A3T2-Normal,TCGA-EL-A3T2,TCGA-THCA,0,55,50+,female,stage iii,0,white,988,'--,32,0
+TCGA-EL-A3T3-Cancer,TCGA-EL-A3T3,TCGA-THCA,1,63,60+,male,stage ii,2,white,4017,'--,133,0
+TCGA-EL-A3T3-Normal,TCGA-EL-A3T3,TCGA-THCA,0,63,60+,male,stage ii,0,white,4017,'--,133,0
+TCGA-EL-A3T6-Cancer,TCGA-EL-A3T6,TCGA-THCA,1,34,30+,female,stage i,1,white,2988,'--,99,0
+TCGA-EL-A3T6-Normal,TCGA-EL-A3T6,TCGA-THCA,0,34,30+,female,stage i,0,white,2988,'--,99,0
+TCGA-EL-A3T7-Cancer,TCGA-EL-A3T7,TCGA-THCA,1,47,40+,female,stage ii,2,white,1256,'--,41,0
+TCGA-EL-A3T7-Normal,TCGA-EL-A3T7,TCGA-THCA,0,47,40+,female,stage ii,0,white,1256,'--,41,0
+TCGA-EL-A3T8-Cancer,TCGA-EL-A3T8,TCGA-THCA,1,36,30+,male,stage i,1,asian,3269,'--,108,0
+TCGA-EL-A3T8-Normal,TCGA-EL-A3T8,TCGA-THCA,0,36,30+,male,stage i,0,asian,3269,'--,108,0
+TCGA-EL-A3T9-Cancer,TCGA-EL-A3T9,TCGA-THCA,1,69,60+,female,stage iv,4,white,'--,174,5,1
+TCGA-EL-A3TA-Cancer,TCGA-EL-A3TA,TCGA-THCA,1,42,40+,male,stage i,1,white,2035,'--,67,0
+TCGA-EL-A3TA-Normal,TCGA-EL-A3TA,TCGA-THCA,0,42,40+,male,stage i,0,white,2035,'--,67,0
+TCGA-EL-A3TB-Cancer,TCGA-EL-A3TB,TCGA-THCA,1,47,40+,female,stage iii,3,white,2519,'--,83,0
+TCGA-EL-A3TB-Normal,TCGA-EL-A3TB,TCGA-THCA,0,47,40+,female,stage iii,0,white,2519,'--,83,0
+TCGA-EL-A3ZG-Cancer,TCGA-EL-A3ZG,TCGA-THCA,1,15,10+,male,stage i,1,asian,2724,'--,90,0
+TCGA-EL-A3ZG-Normal,TCGA-EL-A3ZG,TCGA-THCA,0,15,10+,male,stage i,0,asian,2724,'--,90,0
+TCGA-EL-A3ZH-Cancer,TCGA-EL-A3ZH,TCGA-THCA,1,42,40+,female,stage i,1,white,2773,'--,92,0
+TCGA-EL-A3ZH-Normal,TCGA-EL-A3ZH,TCGA-THCA,0,42,40+,female,stage i,0,white,2773,'--,92,0
+TCGA-EL-A3ZL-Cancer,TCGA-EL-A3ZL,TCGA-THCA,1,34,30+,female,stage i,1,white,1895,'--,63,0
+TCGA-EL-A3ZL-Normal,TCGA-EL-A3ZL,TCGA-THCA,0,34,30+,female,stage i,0,white,1895,'--,63,0
+TCGA-EL-A3ZN-Cancer,TCGA-EL-A3ZN,TCGA-THCA,1,28,20+,female,stage i,1,white,1614,'--,53,0
+TCGA-EL-A3ZO-Cancer,TCGA-EL-A3ZO,TCGA-THCA,1,79,70+,female,stage iii,3,white,2211,'--,73,0
+TCGA-EL-A3ZO-Normal,TCGA-EL-A3ZO,TCGA-THCA,0,79,70+,female,stage iii,0,white,2211,'--,73,0
+TCGA-EL-A3ZP-Cancer,TCGA-EL-A3ZP,TCGA-THCA,1,19,10+,male,stage i,1,white,1992,'--,66,0
+TCGA-EL-A3ZP-Normal,TCGA-EL-A3ZP,TCGA-THCA,0,19,10+,male,stage i,0,white,1992,'--,66,0
+TCGA-EL-A3ZQ-Cancer,TCGA-EL-A3ZQ,TCGA-THCA,1,78,70+,female,stage ii,2,white,1862,'--,62,0
+TCGA-EL-A3ZQ-Normal,TCGA-EL-A3ZQ,TCGA-THCA,0,78,70+,female,stage ii,0,white,1862,'--,62,0
+TCGA-EL-A3ZR-Cancer,TCGA-EL-A3ZR,TCGA-THCA,1,46,40+,female,stage ii,2,white,1830,'--,61,0
+TCGA-EL-A3ZR-Normal,TCGA-EL-A3ZR,TCGA-THCA,0,46,40+,female,stage ii,0,white,1830,'--,61,0
+TCGA-EL-A3ZS-Cancer,TCGA-EL-A3ZS,TCGA-THCA,1,22,20+,female,stage i,1,white,215,'--,7,0
+TCGA-EL-A3ZS-Normal,TCGA-EL-A3ZS,TCGA-THCA,0,22,20+,female,stage i,0,white,215,'--,7,0
+TCGA-EL-A3ZT-Cancer,TCGA-EL-A3ZT,TCGA-THCA,1,35,30+,male,stage i,1,white,1808,'--,60,0
+TCGA-EL-A3ZT-Normal,TCGA-EL-A3ZT,TCGA-THCA,0,35,30+,male,stage i,0,white,1808,'--,60,0
+TCGA-EL-A4JV-Cancer,TCGA-EL-A4JV,TCGA-THCA,1,41,40+,female,stage i,1,asian,1748,'--,58,0
+TCGA-EL-A4JW-Cancer,TCGA-EL-A4JW,TCGA-THCA,1,38,30+,female,stage i,1,white,1056,'--,35,0
+TCGA-EL-A4JX-Cancer,TCGA-EL-A4JX,TCGA-THCA,1,31,30+,female,stage i,1,black or african american,1398,'--,46,0
+TCGA-EL-A4JZ-Cancer,TCGA-EL-A4JZ,TCGA-THCA,1,55,50+,female,stage iii,3,white,1856,'--,61,0
+TCGA-EL-A4K0-Cancer,TCGA-EL-A4K0,TCGA-THCA,1,54,50+,female,stage i,1,white,944,'--,31,0
+TCGA-EL-A4K1-Cancer,TCGA-EL-A4K1,TCGA-THCA,1,68,60+,female,stage iii,3,white,1046,'--,34,0
+TCGA-EL-A4K2-Cancer,TCGA-EL-A4K2,TCGA-THCA,1,43,40+,female,stage i,1,white,928,'--,30,0
+TCGA-EL-A4K4-Cancer,TCGA-EL-A4K4,TCGA-THCA,1,33,30+,female,stage i,1,white,1623,'--,54,0
+TCGA-EL-A4K6-Cancer,TCGA-EL-A4K6,TCGA-THCA,1,75,70+,male,stage iv,4,white,1343,'--,44,0
+TCGA-EL-A4K7-Cancer,TCGA-EL-A4K7,TCGA-THCA,1,74,70+,male,stage iii,3,white,1251,'--,41,0
+TCGA-EL-A4K9-Cancer,TCGA-EL-A4K9,TCGA-THCA,1,68,60+,male,stage ii,2,white,1455,'--,48,0
+TCGA-EL-A4KD-Cancer,TCGA-EL-A4KD,TCGA-THCA,1,41,40+,male,stage i,1,white,1326,'--,44,0
+TCGA-EL-A4KG-Cancer,TCGA-EL-A4KG,TCGA-THCA,1,35,30+,female,stage i,1,white,739,'--,24,0
+TCGA-EL-A4KH-Cancer,TCGA-EL-A4KH,TCGA-THCA,1,36,30+,female,stage i,1,white,823,'--,27,0
+TCGA-EL-A4KI-Cancer,TCGA-EL-A4KI,TCGA-THCA,1,63,60+,male,stage iii,3,white,727,'--,24,0
+TCGA-EM-A1CT-Cancer,TCGA-EM-A1CT,TCGA-THCA,1,76,70+,male,stage iva,4,not reported,553,'--,18,0
+TCGA-EM-A1CT-Normal,TCGA-EM-A1CT,TCGA-THCA,0,76,70+,male,stage iva,0,not reported,553,'--,18,0
+TCGA-EM-A1CU-Cancer,TCGA-EM-A1CU,TCGA-THCA,1,31,30+,male,stage i,1,not reported,636,'--,21,0
+TCGA-EM-A1CU-Normal,TCGA-EM-A1CU,TCGA-THCA,0,31,30+,male,stage i,0,not reported,636,'--,21,0
+TCGA-EM-A1CV-Cancer,TCGA-EM-A1CV,TCGA-THCA,1,32,30+,female,stage i,1,not reported,1475,'--,49,0
+TCGA-EM-A1CV-Normal,TCGA-EM-A1CV,TCGA-THCA,0,32,30+,female,stage i,0,not reported,1475,'--,49,0
+TCGA-EM-A1CW-Cancer,TCGA-EM-A1CW,TCGA-THCA,1,39,30+,female,stage i,1,not reported,549,'--,18,0
+TCGA-EM-A1CW-Normal,TCGA-EM-A1CW,TCGA-THCA,0,39,30+,female,stage i,0,not reported,549,'--,18,0
+TCGA-EM-A1YB-Cancer,TCGA-EM-A1YB,TCGA-THCA,1,73,70+,female,stage ii,2,not reported,592,'--,19,0
+TCGA-EM-A1YC-Cancer,TCGA-EM-A1YC,TCGA-THCA,1,71,70+,female,stage iii,3,not reported,2391,'--,79,0
+TCGA-EM-A1YC-Normal,TCGA-EM-A1YC,TCGA-THCA,0,71,70+,female,stage iii,0,not reported,2391,'--,79,0
+TCGA-EM-A1YD-Cancer,TCGA-EM-A1YD,TCGA-THCA,1,53,50+,female,stage ii,2,not reported,1734,'--,57,0
+TCGA-EM-A1YE-Cancer,TCGA-EM-A1YE,TCGA-THCA,1,47,40+,female,stage ii,2,not reported,1645,'--,54,0
+TCGA-EM-A22I-Cancer,TCGA-EM-A22I,TCGA-THCA,1,52,50+,female,stage iii,3,not reported,448,'--,14,0
+TCGA-EM-A22J-Cancer,TCGA-EM-A22J,TCGA-THCA,1,56,50+,female,stage ii,2,not reported,441,'--,14,0
+TCGA-EM-A22K-Cancer,TCGA-EM-A22K,TCGA-THCA,1,46,40+,female,stage iva,4,not reported,479,'--,15,0
+TCGA-EM-A22L-Cancer,TCGA-EM-A22L,TCGA-THCA,1,33,30+,female,stage i,1,not reported,318,'--,10,0
+TCGA-EM-A22M-Cancer,TCGA-EM-A22M,TCGA-THCA,1,52,50+,male,stage i,1,asian,442,'--,14,0
+TCGA-EM-A22O-Cancer,TCGA-EM-A22O,TCGA-THCA,1,75,70+,male,stage iva,4,asian,1344,'--,44,0
+TCGA-EM-A22P-Cancer,TCGA-EM-A22P,TCGA-THCA,1,64,60+,male,stage iva,4,not reported,1256,'--,41,0
+TCGA-EM-A22Q-Cancer,TCGA-EM-A22Q,TCGA-THCA,1,36,30+,male,stage i,1,not reported,433,'--,14,0
+TCGA-EM-A2CJ-Cancer,TCGA-EM-A2CJ,TCGA-THCA,1,49,40+,female,stage i,1,not reported,1447,'--,48,0
+TCGA-EM-A2CK-Cancer,TCGA-EM-A2CK,TCGA-THCA,1,28,20+,male,stage i,1,not reported,544,'--,18,0
+TCGA-EM-A2CM-Cancer,TCGA-EM-A2CM,TCGA-THCA,1,62,60+,female,stage iii,3,not reported,1253,'--,41,0
+TCGA-EM-A2CN-Cancer,TCGA-EM-A2CN,TCGA-THCA,1,62,60+,male,stage ivc,4,not reported,715,'--,23,0
+TCGA-EM-A2CO-Cancer,TCGA-EM-A2CO,TCGA-THCA,1,77,70+,female,stage ii,2,not reported,184,'--,6,0
+TCGA-EM-A2CQ-Cancer,TCGA-EM-A2CQ,TCGA-THCA,1,40,40+,female,stage i,1,not reported,374,'--,12,0
+TCGA-EM-A2CR-Cancer,TCGA-EM-A2CR,TCGA-THCA,1,46,40+,female,stage ii,2,not reported,415,'--,13,0
+TCGA-EM-A2CS-Cancer,TCGA-EM-A2CS,TCGA-THCA,1,51,50+,female,stage iva,4,not reported,841,'--,28,0
+TCGA-EM-A2CT-Cancer,TCGA-EM-A2CT,TCGA-THCA,1,20,20+,female,stage i,1,not reported,1474,'--,49,0
+TCGA-EM-A2OV-Cancer,TCGA-EM-A2OV,TCGA-THCA,1,64,60+,female,stage ii,2,asian,674,'--,22,0
+TCGA-EM-A2OW-Cancer,TCGA-EM-A2OW,TCGA-THCA,1,37,30+,female,stage i,1,not reported,1227,'--,40,0
+TCGA-EM-A2OX-Cancer,TCGA-EM-A2OX,TCGA-THCA,1,46,40+,male,stage iva,4,not reported,600,'--,20,0
+TCGA-EM-A2OZ-Cancer,TCGA-EM-A2OZ,TCGA-THCA,1,66,60+,male,stage i,1,not reported,1033,'--,34,0
+TCGA-EM-A2P0-Cancer,TCGA-EM-A2P0,TCGA-THCA,1,33,30+,male,stage i,1,not reported,535,'--,17,0
+TCGA-EM-A2P1-Cancer,TCGA-EM-A2P1,TCGA-THCA,1,33,30+,male,stage i,1,not reported,531,'--,17,0
+TCGA-EM-A2P2-Cancer,TCGA-EM-A2P2,TCGA-THCA,1,46,40+,male,stage iii,3,not reported,526,'--,17,0
+TCGA-EM-A2P3-Cancer,TCGA-EM-A2P3,TCGA-THCA,1,47,40+,female,stage i,1,not reported,444,'--,14,0
+TCGA-EM-A3AI-Cancer,TCGA-EM-A3AI,TCGA-THCA,1,67,60+,female,stage ii,2,white,685,'--,22,0
+TCGA-EM-A3AJ-Cancer,TCGA-EM-A3AJ,TCGA-THCA,1,39,30+,male,stage i,1,not reported,941,'--,31,0
+TCGA-EM-A3AK-Cancer,TCGA-EM-A3AK,TCGA-THCA,1,62,60+,female,stage i,1,not reported,477,'--,15,0
+TCGA-EM-A3AO-Cancer,TCGA-EM-A3AO,TCGA-THCA,1,61,60+,male,stage iva,4,not reported,1354,'--,45,0
+TCGA-EM-A3AP-Cancer,TCGA-EM-A3AP,TCGA-THCA,1,31,30+,female,stage i,1,not reported,254,'--,8,0
+TCGA-EM-A3AR-Cancer,TCGA-EM-A3AR,TCGA-THCA,1,41,40+,male,stage i,1,not reported,1133,'--,37,0
+TCGA-EM-A3FJ-Cancer,TCGA-EM-A3FJ,TCGA-THCA,1,24,20+,female,stage i,1,not reported,850,'--,28,0
+TCGA-EM-A3FK-Cancer,TCGA-EM-A3FK,TCGA-THCA,1,30,30+,female,stage i,1,not reported,723,'--,24,0
+TCGA-EM-A3FL-Cancer,TCGA-EM-A3FL,TCGA-THCA,1,63,60+,female,stage i,1,not reported,1441,'--,48,0
+TCGA-EM-A3FM-Cancer,TCGA-EM-A3FM,TCGA-THCA,1,57,50+,male,stage iva,4,not reported,639,'--,21,0
+TCGA-EM-A3FN-Cancer,TCGA-EM-A3FN,TCGA-THCA,1,42,40+,female,stage i,1,not reported,367,'--,12,0
+TCGA-EM-A3FO-Cancer,TCGA-EM-A3FO,TCGA-THCA,1,40,40+,male,stage i,1,not reported,532,'--,17,0
+TCGA-EM-A3FP-Cancer,TCGA-EM-A3FP,TCGA-THCA,1,71,70+,female,stage ii,2,not reported,529,'--,17,0
+TCGA-EM-A3FQ-Cancer,TCGA-EM-A3FQ,TCGA-THCA,1,19,10+,female,stage i,1,not reported,492,'--,16,0
+TCGA-EM-A3FR-Cancer,TCGA-EM-A3FR,TCGA-THCA,1,55,50+,female,stage iii,3,not reported,457,'--,15,0
+TCGA-EM-A3O3-Cancer,TCGA-EM-A3O3,TCGA-THCA,1,83,80+,female,stage iii,3,not reported,441,'--,14,0
+TCGA-EM-A3O6-Cancer,TCGA-EM-A3O6,TCGA-THCA,1,54,50+,female,stage ii,2,not reported,458,'--,15,0
+TCGA-EM-A3O7-Cancer,TCGA-EM-A3O7,TCGA-THCA,1,46,40+,female,stage iii,3,not reported,223,'--,7,0
+TCGA-EM-A3O8-Cancer,TCGA-EM-A3O8,TCGA-THCA,1,33,30+,female,stage i,1,not reported,381,'--,12,0
+TCGA-EM-A3OA-Cancer,TCGA-EM-A3OA,TCGA-THCA,1,55,50+,female,stage ii,2,not reported,822,'--,27,0
+TCGA-EM-A3OB-Cancer,TCGA-EM-A3OB,TCGA-THCA,1,33,30+,female,stage i,1,not reported,1176,'--,39,0
+TCGA-EM-A3ST-Cancer,TCGA-EM-A3ST,TCGA-THCA,1,62,60+,female,stage iii,3,not reported,1182,'--,39,0
+TCGA-EM-A3ST-Normal,TCGA-EM-A3ST,TCGA-THCA,0,62,60+,female,stage iii,0,not reported,1182,'--,39,0
+TCGA-EM-A3SU-Cancer,TCGA-EM-A3SU,TCGA-THCA,1,43,40+,female,stage i,1,not reported,911,'--,30,0
+TCGA-EM-A3SX-Cancer,TCGA-EM-A3SX,TCGA-THCA,1,28,20+,female,stage i,1,not reported,908,'--,30,0
+TCGA-EM-A3SY-Cancer,TCGA-EM-A3SY,TCGA-THCA,1,36,30+,male,stage i,1,not reported,411,'--,13,0
+TCGA-EM-A3SZ-Cancer,TCGA-EM-A3SZ,TCGA-THCA,1,42,40+,female,stage i,1,not reported,389,'--,12,0
+TCGA-EM-A4FF-Cancer,TCGA-EM-A4FF,TCGA-THCA,1,40,40+,female,stage i,1,not reported,2573,'--,85,0
+TCGA-EM-A4FH-Cancer,TCGA-EM-A4FH,TCGA-THCA,1,69,60+,male,stage iii,3,not reported,892,'--,29,0
+TCGA-EM-A4FK-Cancer,TCGA-EM-A4FK,TCGA-THCA,1,33,30+,female,stage i,1,not reported,649,'--,21,0
+TCGA-EM-A4FM-Cancer,TCGA-EM-A4FM,TCGA-THCA,1,59,50+,female,stage iva,4,not reported,162,'--,5,0
+TCGA-EM-A4FN-Cancer,TCGA-EM-A4FN,TCGA-THCA,1,49,40+,female,stage iva,4,not reported,802,'--,26,0
+TCGA-EM-A4FO-Cancer,TCGA-EM-A4FO,TCGA-THCA,1,72,70+,male,stage i,1,not reported,802,'--,26,0
+TCGA-EM-A4FQ-Cancer,TCGA-EM-A4FQ,TCGA-THCA,1,42,40+,female,stage i,1,not reported,683,'--,22,0
+TCGA-EM-A4FR-Cancer,TCGA-EM-A4FR,TCGA-THCA,1,28,20+,male,stage i,1,not reported,655,'--,21,0
+TCGA-EM-A4FU-Cancer,TCGA-EM-A4FU,TCGA-THCA,1,35,30+,male,stage i,1,not reported,1840,'--,61,0
+TCGA-EM-A4FV-Cancer,TCGA-EM-A4FV,TCGA-THCA,1,64,60+,female,stage i,1,not reported,744,'--,24,0
+TCGA-EM-A4G1-Cancer,TCGA-EM-A4G1,TCGA-THCA,1,26,20+,female,stage i,1,not reported,416,'--,13,0
+TCGA-ET-A25G-Cancer,TCGA-ET-A25G,TCGA-THCA,1,56,50+,female,stage iii,3,white,2492,'--,83,0
+TCGA-ET-A25I-Cancer,TCGA-ET-A25I,TCGA-THCA,1,37,30+,female,stage i,1,white,2485,'--,82,0
+TCGA-ET-A25K-Cancer,TCGA-ET-A25K,TCGA-THCA,1,36,30+,female,stage i,1,white,2142,'--,71,0
+TCGA-ET-A25O-Cancer,TCGA-ET-A25O,TCGA-THCA,1,35,30+,female,stage i,1,black or african american,1986,'--,66,0
+TCGA-ET-A25P-Cancer,TCGA-ET-A25P,TCGA-THCA,1,24,20+,female,stage i,1,asian,559,'--,18,0
+TCGA-ET-A25R-Cancer,TCGA-ET-A25R,TCGA-THCA,1,51,50+,female,stage iii,3,white,1930,'--,64,0
+TCGA-ET-A2MX-Cancer,TCGA-ET-A2MX,TCGA-THCA,1,27,20+,male,stage i,1,white,2689,'--,89,0
+TCGA-ET-A2MY-Cancer,TCGA-ET-A2MY,TCGA-THCA,1,72,70+,female,stage i,1,black or african american,1787,'--,59,0
+TCGA-ET-A2MZ-Cancer,TCGA-ET-A2MZ,TCGA-THCA,1,39,30+,male,stage i,1,white,1133,'--,37,0
+TCGA-ET-A2N0-Cancer,TCGA-ET-A2N0,TCGA-THCA,1,51,50+,female,stage iii,3,white,1600,'--,53,0
+TCGA-ET-A2N4-Cancer,TCGA-ET-A2N4,TCGA-THCA,1,53,50+,female,stage iii,3,white,81,'--,2,0
+TCGA-ET-A2N5-Cancer,TCGA-ET-A2N5,TCGA-THCA,1,46,40+,female,stage iii,3,black or african american,2460,'--,82,0
+TCGA-ET-A39I-Cancer,TCGA-ET-A39I,TCGA-THCA,1,83,80+,female,stage i,1,white,9,1011,33,1
+TCGA-ET-A39J-Cancer,TCGA-ET-A39J,TCGA-THCA,1,23,20+,female,stage i,1,white,3227,'--,107,0
+TCGA-ET-A39K-Cancer,TCGA-ET-A39K,TCGA-THCA,1,48,40+,female,stage iii,3,white,3267,'--,108,0
+TCGA-ET-A39M-Cancer,TCGA-ET-A39M,TCGA-THCA,1,34,30+,male,stage i,1,white,2582,'--,86,0
+TCGA-ET-A39O-Cancer,TCGA-ET-A39O,TCGA-THCA,1,39,30+,male,stage i,1,white,3059,'--,101,0
+TCGA-ET-A39P-Cancer,TCGA-ET-A39P,TCGA-THCA,1,73,70+,female,stage iii,3,black or african american,2900,'--,96,0
+TCGA-ET-A39S-Cancer,TCGA-ET-A39S,TCGA-THCA,1,27,20+,female,stage i,1,white,1676,'--,55,0
+TCGA-ET-A39T-Cancer,TCGA-ET-A39T,TCGA-THCA,1,55,50+,female,stage iii,3,white,2987,'--,99,0
+TCGA-ET-A3BN-Cancer,TCGA-ET-A3BN,TCGA-THCA,1,33,30+,female,stage i,1,asian,859,'--,28,0
+TCGA-ET-A3BO-Cancer,TCGA-ET-A3BO,TCGA-THCA,1,44,40+,female,stage i,1,white,1533,'--,51,0
+TCGA-ET-A3BP-Cancer,TCGA-ET-A3BP,TCGA-THCA,1,34,30+,female,stage i,1,white,2406,'--,80,0
+TCGA-ET-A3BS-Cancer,TCGA-ET-A3BS,TCGA-THCA,1,42,40+,male,stage i,1,asian,176,'--,5,0
+TCGA-ET-A3BT-Cancer,TCGA-ET-A3BT,TCGA-THCA,1,60,60+,female,stage iva,4,white,2665,'--,88,0
+TCGA-ET-A3BU-Cancer,TCGA-ET-A3BU,TCGA-THCA,1,28,20+,male,stage i,1,white,2367,'--,78,0
+TCGA-ET-A3BV-Cancer,TCGA-ET-A3BV,TCGA-THCA,1,47,40+,female,stage iii,3,white,2294,'--,76,0
+TCGA-ET-A3BW-Cancer,TCGA-ET-A3BW,TCGA-THCA,1,30,30+,female,stage i,1,white,1419,'--,47,0
+TCGA-ET-A3BX-Cancer,TCGA-ET-A3BX,TCGA-THCA,1,24,20+,male,stage i,1,white,1596,'--,53,0
+TCGA-ET-A3DO-Cancer,TCGA-ET-A3DO,TCGA-THCA,1,33,30+,female,stage i,1,white,3552,'--,118,0
+TCGA-ET-A3DP-Cancer,TCGA-ET-A3DP,TCGA-THCA,1,43,40+,female,stage i,1,black or african american,2877,'--,95,0
+TCGA-ET-A3DP-Normal,TCGA-ET-A3DP,TCGA-THCA,0,43,40+,female,stage i,0,black or african american,2877,'--,95,0
+TCGA-ET-A3DQ-Cancer,TCGA-ET-A3DQ,TCGA-THCA,1,43,40+,female,stage i,1,white,2581,'--,86,0
+TCGA-ET-A3DS-Cancer,TCGA-ET-A3DS,TCGA-THCA,1,33,30+,female,stage i,1,white,2033,'--,67,0
+TCGA-ET-A3DU-Cancer,TCGA-ET-A3DU,TCGA-THCA,1,21,20+,female,stage i,1,white,1911,'--,63,0
+TCGA-ET-A3DW-Cancer,TCGA-ET-A3DW,TCGA-THCA,1,64,60+,male,stage iii,3,asian,752,'--,25,0
+TCGA-ET-A3DW-Normal,TCGA-ET-A3DW,TCGA-THCA,0,64,60+,male,stage iii,0,asian,752,'--,25,0
+TCGA-ET-A40P-Cancer,TCGA-ET-A40P,TCGA-THCA,1,32,30+,female,stage i,1,white,1338,'--,44,0
+TCGA-ET-A40Q-Cancer,TCGA-ET-A40Q,TCGA-THCA,1,38,30+,male,stage i,1,white,1407,'--,46,0
+TCGA-ET-A40S-Cancer,TCGA-ET-A40S,TCGA-THCA,1,62,60+,male,stage ii,2,white,1223,'--,40,0
+TCGA-ET-A40T-Cancer,TCGA-ET-A40T,TCGA-THCA,1,26,20+,female,stage i,1,white,1140,'--,38,0
+TCGA-ET-A4KN-Cancer,TCGA-ET-A4KN,TCGA-THCA,1,51,50+,female,stage iii,3,white,1009,'--,33,0
+TCGA-ET-A4KQ-Cancer,TCGA-ET-A4KQ,TCGA-THCA,1,45,40+,female,stage ii,2,white,955,'--,31,0
+TCGA-FE-A22Z-Cancer,TCGA-FE-A22Z,TCGA-THCA,1,61,60+,female,stage iva,4,white,2243,'--,74,0
+TCGA-FE-A230-Cancer,TCGA-FE-A230,TCGA-THCA,1,30,30+,female,stage i,1,white,2173,'--,72,0
+TCGA-FE-A231-Cancer,TCGA-FE-A231,TCGA-THCA,1,70,70+,male,stage iva,4,white,961,'--,32,0
+TCGA-FE-A232-Cancer,TCGA-FE-A232,TCGA-THCA,1,44,40+,female,stage i,1,white,2424,'--,80,0
+TCGA-FE-A233-Cancer,TCGA-FE-A233,TCGA-THCA,1,18,10+,female,stage i,1,white,751,'--,25,0
+TCGA-FE-A234-Cancer,TCGA-FE-A234,TCGA-THCA,1,26,20+,female,stage i,1,white,2075,'--,69,0
+TCGA-FE-A235-Cancer,TCGA-FE-A235,TCGA-THCA,1,26,20+,female,stage i,1,white,3571,'--,119,0
+TCGA-FE-A236-Cancer,TCGA-FE-A236,TCGA-THCA,1,33,30+,male,stage i,1,white,2031,'--,67,0
+TCGA-FE-A237-Cancer,TCGA-FE-A237,TCGA-THCA,1,19,10+,female,stage i,1,white,3431,'--,114,0
+TCGA-FE-A239-Cancer,TCGA-FE-A239,TCGA-THCA,1,82,80+,male,stage iii,3,white,'--,1023,34,1
+TCGA-FE-A23A-Cancer,TCGA-FE-A23A,TCGA-THCA,1,27,20+,female,stage i,1,white,2489,'--,82,0
+TCGA-FE-A3PA-Cancer,TCGA-FE-A3PA,TCGA-THCA,1,16,10+,male,stage ii,2,white,3235,'--,107,0
+TCGA-FE-A3PB-Cancer,TCGA-FE-A3PB,TCGA-THCA,1,33,30+,female,stage i,1,white,2590,'--,86,0
+TCGA-FE-A3PC-Cancer,TCGA-FE-A3PC,TCGA-THCA,1,37,30+,female,stage i,1,white,2606,'--,86,0
+TCGA-FE-A3PD-Cancer,TCGA-FE-A3PD,TCGA-THCA,1,17,10+,female,stage i,1,white,2396,'--,79,0
+TCGA-FK-A3S3-Cancer,TCGA-FK-A3S3,TCGA-THCA,1,43,40+,female,stage i,1,black or african american,2162,'--,72,0
+TCGA-FK-A3SB-Cancer,TCGA-FK-A3SB,TCGA-THCA,1,28,20+,female,stage i,1,asian,125,'--,4,0
+TCGA-FK-A3SH-Cancer,TCGA-FK-A3SH,TCGA-THCA,1,50,50+,female,stage iii,3,white,1463,'--,48,0
+TCGA-FK-A4UB-Cancer,TCGA-FK-A4UB,TCGA-THCA,1,51,50+,male,stage iii,3,white,3531,'--,117,0
+TCGA-FY-A2QD-Cancer,TCGA-FY-A2QD,TCGA-THCA,1,61,60+,female,not reported,'--,black or african american,38,'--,1,0
+TCGA-FY-A3BL-Cancer,TCGA-FY-A3BL,TCGA-THCA,1,29,20+,male,stage i,1,white,621,'--,20,0
+TCGA-FY-A3I4-Cancer,TCGA-FY-A3I4,TCGA-THCA,1,34,30+,female,stage i,1,white,542,'--,18,0
+TCGA-FY-A3NM-Cancer,TCGA-FY-A3NM,TCGA-THCA,1,48,40+,female,stage iii,3,white,885,'--,29,0
+TCGA-FY-A3NN-Cancer,TCGA-FY-A3NN,TCGA-THCA,1,48,40+,female,stage iii,3,not reported,0,'--,0,0
+TCGA-FY-A3NP-Cancer,TCGA-FY-A3NP,TCGA-THCA,1,69,60+,male,stage i,1,white,491,'--,16,0
+TCGA-FY-A3ON-Cancer,TCGA-FY-A3ON,TCGA-THCA,1,20,20+,male,stage i,1,white,595,'--,19,0
+TCGA-FY-A3R7-Cancer,TCGA-FY-A3R7,TCGA-THCA,1,50,50+,female,stage iii,3,white,495,'--,16,0
+TCGA-FY-A3R8-Cancer,TCGA-FY-A3R8,TCGA-THCA,1,62,60+,female,stage iii,3,white,477,'--,15,0
+TCGA-FY-A3R9-Cancer,TCGA-FY-A3R9,TCGA-THCA,1,66,60+,female,stage i,1,white,504,'--,16,0
+TCGA-FY-A3RA-Cancer,TCGA-FY-A3RA,TCGA-THCA,1,21,20+,female,stage i,1,white,550,'--,18,0
+TCGA-FY-A3TY-Cancer,TCGA-FY-A3TY,TCGA-THCA,1,61,60+,female,stage iii,3,white,709,'--,23,0
+TCGA-FY-A3TY-Normal,TCGA-FY-A3TY,TCGA-THCA,0,61,60+,female,stage iii,0,white,709,'--,23,0
+TCGA-FY-A3W9-Cancer,TCGA-FY-A3W9,TCGA-THCA,1,66,60+,female,stage ii,2,white,658,'--,21,0
+TCGA-FY-A3WA-Cancer,TCGA-FY-A3WA,TCGA-THCA,1,52,50+,female,stage i,1,white,519,'--,17,0
+TCGA-FY-A3YR-Cancer,TCGA-FY-A3YR,TCGA-THCA,1,64,60+,female,stage iii,3,white,528,'--,17,0
+TCGA-FY-A40K-Cancer,TCGA-FY-A40K,TCGA-THCA,1,46,40+,female,stage i,1,white,461,'--,15,0
+TCGA-FY-A40L-Cancer,TCGA-FY-A40L,TCGA-THCA,1,55,50+,female,stage iva,4,white,726,'--,24,0
+TCGA-FY-A40M-Cancer,TCGA-FY-A40M,TCGA-THCA,1,51,50+,female,stage i,1,white,684,'--,22,0
+TCGA-FY-A40N-Cancer,TCGA-FY-A40N,TCGA-THCA,1,55,50+,female,stage i,1,white,579,'--,19,0
+TCGA-FY-A4B0-Cancer,TCGA-FY-A4B0,TCGA-THCA,1,76,70+,male,stage i,1,white,420,'--,14,0
+TCGA-FY-A4B3-Cancer,TCGA-FY-A4B3,TCGA-THCA,1,51,50+,male,stage iii,3,white,427,'--,14,0
+TCGA-FY-A4B4-Cancer,TCGA-FY-A4B4,TCGA-THCA,1,62,60+,female,stage iii,3,white,657,'--,21,0
+TCGA-FY-A76V-Cancer,TCGA-FY-A76V,TCGA-THCA,1,54,50+,male,stage ii,2,black or african american,51,'--,1,0
+TCGA-GE-A2C6-Cancer,TCGA-GE-A2C6,TCGA-THCA,1,33,30+,female,stage i,1,white,381,'--,12,0
+TCGA-GE-A2C6-Normal,TCGA-GE-A2C6,TCGA-THCA,0,33,30+,female,stage i,0,white,381,'--,12,0
+TCGA-H2-A26U-Cancer,TCGA-H2-A26U,TCGA-THCA,1,54,50+,female,stage iii,3,white,517,'--,17,0
+TCGA-H2-A2K9-Cancer,TCGA-H2-A2K9,TCGA-THCA,1,25,20+,male,stage i,1,white,659,'--,21,0
+TCGA-H2-A2K9-Normal,TCGA-H2-A2K9,TCGA-THCA,0,25,20+,male,stage i,0,white,659,'--,21,0
+TCGA-H2-A3RH-Cancer,TCGA-H2-A3RH,TCGA-THCA,1,41,40+,female,stage i,1,white,379,'--,12,0
+TCGA-H2-A3RI-Cancer,TCGA-H2-A3RI,TCGA-THCA,1,29,20+,female,stage i,1,white,335,'--,11,0
+TCGA-H2-A421-Cancer,TCGA-H2-A421,TCGA-THCA,1,34,30+,female,stage i,1,white,610,'--,20,0
+TCGA-H2-A422-Cancer,TCGA-H2-A422,TCGA-THCA,1,40,40+,female,stage i,1,white,566,'--,18,0
+TCGA-IM-A3EB-Cancer,TCGA-IM-A3EB,TCGA-THCA,1,32,30+,female,stage i,1,white,1488,'--,49,0
+TCGA-IM-A3ED-Cancer,TCGA-IM-A3ED,TCGA-THCA,1,58,50+,female,stage i,1,white,1442,'--,48,0
+TCGA-IM-A3U2-Cancer,TCGA-IM-A3U2,TCGA-THCA,1,89,80+,female,stage iva,4,white,190,'--,6,0
+TCGA-IM-A3U3-Cancer,TCGA-IM-A3U3,TCGA-THCA,1,55,50+,female,stage i,1,white,514,'--,17,0
+TCGA-IM-A41Y-Cancer,TCGA-IM-A41Y,TCGA-THCA,1,42,40+,female,stage i,1,white,664,'--,22,0
+TCGA-IM-A420-Cancer,TCGA-IM-A420,TCGA-THCA,1,39,30+,female,stage i,1,white,250,'--,8,0
+TCGA-IM-A4EB-Cancer,TCGA-IM-A4EB,TCGA-THCA,1,37,30+,male,stage i,1,white,780,'--,26,0
+TCGA-J8-A3NZ-Cancer,TCGA-J8-A3NZ,TCGA-THCA,1,52,50+,female,stage iii,3,white,524,'--,17,0
+TCGA-J8-A3O0-Cancer,TCGA-J8-A3O0,TCGA-THCA,1,38,30+,male,stage i,1,white,1313,'--,43,0
+TCGA-J8-A3O1-Cancer,TCGA-J8-A3O1,TCGA-THCA,1,33,30+,female,stage i,1,white,827,'--,27,0
+TCGA-J8-A3O2-Cancer,TCGA-J8-A3O2,TCGA-THCA,1,39,30+,male,stage i,1,white,342,'--,11,0
+TCGA-J8-A3YD-Cancer,TCGA-J8-A3YD,TCGA-THCA,1,47,40+,female,stage iii,3,white,968,'--,32,0
+TCGA-J8-A3YE-Cancer,TCGA-J8-A3YE,TCGA-THCA,1,31,30+,female,stage i,1,white,847,'--,28,0
+TCGA-J8-A3YF-Cancer,TCGA-J8-A3YF,TCGA-THCA,1,83,80+,male,stage iii,3,white,751,'--,25,0
+TCGA-J8-A3YG-Cancer,TCGA-J8-A3YG,TCGA-THCA,1,54,50+,female,stage iii,3,white,678,'--,22,0
+TCGA-J8-A3YH-Cancer,TCGA-J8-A3YH,TCGA-THCA,1,39,30+,male,stage i,1,white,175,'--,5,0
+TCGA-J8-A42S-Cancer,TCGA-J8-A42S,TCGA-THCA,1,45,40+,male,stage iii,3,white,75,'--,2,0
+TCGA-J8-A4HY-Cancer,TCGA-J8-A4HY,TCGA-THCA,1,68,60+,female,stage iva,4,white,6,'--,0,0
+TCGA-KS-A41F-Cancer,TCGA-KS-A41F,TCGA-THCA,1,37,30+,female,stage i,1,white,4367,'--,145,0
+TCGA-KS-A41I-Cancer,TCGA-KS-A41I,TCGA-THCA,1,47,40+,female,stage i,1,white,486,'--,16,0
+TCGA-KS-A41I-Normal,TCGA-KS-A41I,TCGA-THCA,0,47,40+,female,stage i,0,white,486,'--,16,0
+TCGA-KS-A41J-Cancer,TCGA-KS-A41J,TCGA-THCA,1,28,20+,female,stage i,1,white,477,'--,15,0
+TCGA-KS-A41J-Normal,TCGA-KS-A41J,TCGA-THCA,0,28,20+,female,stage i,0,white,477,'--,15,0
+TCGA-KS-A41L-Cancer,TCGA-KS-A41L,TCGA-THCA,1,39,30+,female,stage i,1,white,3463,'--,115,0
+TCGA-KS-A41L-Normal,TCGA-KS-A41L,TCGA-THCA,0,39,30+,female,stage i,0,white,3463,'--,115,0
+TCGA-KS-A4I1-Cancer,TCGA-KS-A4I1,TCGA-THCA,1,37,30+,female,stage i,1,asian,812,'--,27,0
+TCGA-KS-A4I3-Cancer,TCGA-KS-A4I3,TCGA-THCA,1,41,40+,male,stage i,1,asian,1329,'--,44,0
+TCGA-KS-A4I5-Cancer,TCGA-KS-A4I5,TCGA-THCA,1,49,40+,female,stage iva,4,white,567,'--,18,0
+TCGA-KS-A4I7-Cancer,TCGA-KS-A4I7,TCGA-THCA,1,61,60+,female,stage i,1,white,987,'--,32,0
+TCGA-KS-A4I9-Cancer,TCGA-KS-A4I9,TCGA-THCA,1,46,40+,female,stage i,1,black or african american,2658,'--,88,0
+TCGA-KS-A4IB-Cancer,TCGA-KS-A4IB,TCGA-THCA,1,41,40+,female,stage i,1,asian,2577,'--,85,0
+TCGA-KS-A4IC-Cancer,TCGA-KS-A4IC,TCGA-THCA,1,45,40+,female,stage iii,3,white,1073,'--,35,0
+TCGA-KS-A4ID-Cancer,TCGA-KS-A4ID,TCGA-THCA,1,55,50+,female,stage i,1,white,1011,'--,33,0
+TCGA-L6-A4EP-Cancer,TCGA-L6-A4EP,TCGA-THCA,1,41,40+,female,stage i,1,asian,1016,'--,33,0
+TCGA-L6-A4EQ-Cancer,TCGA-L6-A4EQ,TCGA-THCA,1,47,40+,male,stage iii,3,white,1228,'--,40,0
+TCGA-L6-A4ET-Cancer,TCGA-L6-A4ET,TCGA-THCA,1,49,40+,female,stage ivc,4,white,664,'--,22,0
+TCGA-L6-A4EU-Cancer,TCGA-L6-A4EU,TCGA-THCA,1,58,50+,female,stage iii,3,black or african american,289,'--,9,0
+TCGA-MK-A4N6-Cancer,TCGA-MK-A4N6,TCGA-THCA,1,35,30+,male,stage i,1,white,1098,'--,36,0
+TCGA-MK-A4N7-Cancer,TCGA-MK-A4N7,TCGA-THCA,1,20,20+,female,stage i,1,white,987,'--,32,0
+TCGA-MK-A4N9-Cancer,TCGA-MK-A4N9,TCGA-THCA,1,41,40+,female,stage i,1,white,919,'--,30,0
+TCGA-MK-A84Z-Cancer,TCGA-MK-A84Z,TCGA-THCA,1,74,70+,male,stage iii,3,black or african american,728,'--,24,0
+TCGA-QD-A8IV-Cancer,TCGA-QD-A8IV,TCGA-THCA,1,50,50+,female,stage iva,4,black or african american,392,'--,13,0
