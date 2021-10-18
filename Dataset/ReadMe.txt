@@ -1,13 +1,15 @@
-SampleSheet.csv: Basic information for TCGA samples
+./SampleSheet/CancerName.csv: Basic information of the samples of corresponding TCGA cancer.
 
-ExpressionMatrix_tRF.csv: The tRF expression profiles of TCGA samples after batch effect removal
+./ExpressionMatrix/CancerName.csv: The tRF expression profiles of corresponding TCGA cancer after batch effect removal.
 
-Matrix_EPIC.csv: The cell composition profiles of TCGA samples generated from the deconvolution of gene expression profiles by the EPIC tool
+./EPICMatrix/CancerName.csv: The cell composition profiles of corresponding TCGA cancer generated from the deconvolution of gene expression profiles by the EPIC tool.
 
-MINTbase.xlsx: Basic information of 26744 tRFs provided by MINTbase V2.0 database
+./catRFExpressionMatirx/CancerName.csv: The ca-tRF expression profiles of corresponding TCGA cancer.
 
-TGI.csv: AGO-mediated tRF-target gene interactions provided by tRFTar database
+./ClusteredSampleSheet/CancerName.csv: Basic information with consensus clustering label of the samples of corresponding TCGA cancer.
 
-PPI.csv: Cross-validated protein-protein interactions provided by PICKLE 3.0 database
+./MINTbase.xlsx: Basic information of 26744 tRFs provided by MINTbase V2.0 database.
 
-ClusteredSampleSheet.xlsx: Basic information of TCGA samples with consensus clustering labels
+./TGI.csv: AGO-mediated tRF-target gene interactions used in our work provided by tRFTar database.
+
+./PPI.csv: Cross-validated protein-protein interactions used in our work provided by PICKLE 3.0 database.
