@@ -1,4 +1,4 @@
-A sample sheet (".csv" format) and a tRF expression matrix (".csv" format) of interested cancer should be prepared for this code, which can be processed from the "Dataset/SampleSheet.csv" and "Dataset/tRF_Expression_Matrix.csv"
+A sample sheet (See "/DataSet/SampleSheet/CancerName.csv") and a tRF expression matrix (See "/DataSet/tRFExpressionMatrix/CancerName.csv") of interested cancer should be prepared for this code.
 "/Path/Of/Sample/Sheet" and "/Path/Of/tRF/Expression/Matrix" in the code is exactly the directory of sample sheet and tRF expression matrix.
 "/Path/Of/Result" is the directory saving the results.
 
@@ -61,9 +61,6 @@ if((length(sample_normal)>=n_threshold)&(length(sample_cancer)>=n_threshold)){
 	colnames(odf)<-c("nonzero_ratio","coefficient_difference","p","tRF")
 	odf<-odf[,c("tRF","nonzero_ratio","coefficient_difference","p")]
 	write.csv(odf,"/Path/Of/Result",sep=''),row.names=FALSE)
-}
-else{
-	message(paste("No Sufficient Sample"))
 }
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
