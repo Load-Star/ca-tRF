@@ -13,3 +13,5 @@
 ./TGI.csv: AGO-mediated tRF-target gene interactions used in our work provided by tRFTar database.
 
 ./PPI.csv: Cross-validated protein-protein interactions used in our work provided by PICKLE 3.0 database.
+
+./HCG6.tsv: 711 oncogenes and tumor suppressor genes recored by the NCG6 database.
