@@ -1,4 +1,4 @@
-The following python code demonstrate how to construct PPI network and how the random walk with restart works.
+The following python code demonstrates how to construct PPI network and how the random walk with restart works.
 "/Path/Of/PPI" in the code is the directory of the file recording protein-protein interactions (See "/Dataset/PPI.csv").
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
