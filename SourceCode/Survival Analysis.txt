@@ -1,0 +1,68 @@
+This code performs survival anlysis and a clustered sample sheet (See "/DataSet/ClusteredSampleSheet/CancerName.csv") should be prepared.
+"/Path/Of/Clustered/Sample/Sheet" in the code is exactly the directory of clustered sample sheet.
+"/Path/Of/Result" is the directory saving the results.
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+library("survival")
+library("survminer")
+
+font_size1=12
+font_size2=4
+
+df_survival_analysis<-read.csv(
+    "Path/Of/Clustered/Sample/Sheet",sep="")
+)
+
+tmp_df_survival_analysis <- df_survival_analysis
+result=tryCatch({
+    fit <- survfit(Surv(duration, is_dead) ~ label, data = tmp_df_survival_analysis)
+
+    survplot <- ggsurvplot(fit,pval = TRUE,risk.table = TRUE,surv.median.line = "hv",
+                           fontsize = font_size2, pval.size = font_size2, censor.size = font_size2-2,
+                           tables.height = 1/3, ggtheme = theme_bw(base_size = font_size1),
+                           xlab="Timeline (month)", ylab="Survival rate", 
+                           legend.labs = levels(as.factor(as.character(tmp_df_survival_analysis$label))), 
+                           legend.title = "", risk.table.title = "")
+    pdf.options(reset = TRUE, onefile = FALSE, width = 7.5, height = 7.5) 
+    pdf(file="Path/Of/Result")
+    print(survplot)
+    dev.off()
+},error=function(e){})
+
+for (gender in c("male","female")){
+    tmp_df_survival_analysis <- df_survival_analysis[df_survival_analysis$"gender"==gender,]
+    result=tryCatch({
+        fit <- survfit(Surv(duration, is_dead) ~ label, data = tmp_df_survival_analysis)
+
+        survplot <- ggsurvplot(fit,pval = TRUE,risk.table = TRUE,surv.median.line = "hv",
+                               fontsize = font_size2, pval.size = font_size2, censor=FALSE,
+                               tables.height = 1/3, ggtheme = theme_bw(base_size = font_size1),
+                               xlab="Timeline (month)", ylab="Survival rate", 
+                               legend.labs = levels(as.factor(as.character(tmp_df_survival_analysis$label))),
+                               legend.title = "", risk.table.title = "")
+        pdf.options(reset = TRUE, onefile = FALSE, width = 7.5, height = 7.5) 
+        pdf(file="Path/Of/Result")
+        print(survplot)
+        dev.off()
+    },error=function(e){})
+}
+
+
+for (race in c("white","black or african american","asian",
+     "american indian or alaska native","native hawaiian or other pacific islander")){
+    tmp_df_survival_analysis <- df_survival_analysis[df_survival_analysis$"race"==race,]
+    result=tryCatch({
+        fit <- survfit(Surv(duration, is_dead) ~ label, data = tmp_df_survival_analysis)
+
+        survplot <- ggsurvplot(fit,pval = TRUE,risk.table = TRUE,surv.median.line = "hv",
+                               fontsize = font_size2, pval.size = font_size2, censor=FALSE,
+                               tables.height = 1/3, ggtheme = theme_bw(base_size = font_size1),
+                               xlab="Timeline (month)", ylab="Survival rate", 
+                               legend.labs = levels(as.factor(as.character(tmp_df_survival_analysis$label))),
+                               legend.title = "", risk.table.title = "")
+        pdf.options(reset = TRUE, onefile = FALSE, width = 7.5, height = 7.5) 
+        pdf(file="Path/Of/Result")
+        print(survplot)
+        dev.off()
+    },error=function(e){})
+}
